@@ -130,9 +130,26 @@ void loop() {
       Serial.print(pipe);                     // print the pipe number
       Serial.print(F(": "));
       Serial.println(payload);                // print the payload's value
-      if(payload == 2){digitalWrite(2, HIGH);}
-      if(payload == 3){digitalWrite(3, HIGH);}
-      if(payload == 4){digitalWrite(4, HIGH);}
+      if(payload == 2){
+          digitalWrite(2, HIGH);
+          digitalWrite(3, LOW);
+          digitalWrite(4, LOW);
+      }
+      if(payload == 3){
+        digitalWrite(3, HIGH);
+        digitalWrite(2, LOW);
+        digitalWrite(4, LOW);
+        }
+      if(payload == 4){
+        digitalWrite(4, HIGH);
+        digitalWrite(3, LOW);
+        digitalWrite(2, LOW);
+        }
+      if(payload == 0){
+          digitalWrite(2, LOW);
+          digitalWrite(3, LOW);
+          digitalWrite(4, LOW);
+        }
     }
   } // role
 
