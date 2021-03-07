@@ -33,11 +33,11 @@ bool role = false;  // true = TX role, false = RX role
 // a single float number that will be incremented
 // on every successful transmission
 float payload = 0.0;
-
+int led_1 = 5;
 void setup() {
-  pinMode(2, OUTPUT);
-  pinMode(3, OUTPUT);
-  pinMode(4, OUTPUT);
+  pinMode(led_1, OUTPUT);
+//  pinMode(3, OUTPUT);
+//  pinMode(4, OUTPUT);
   Serial.begin(115200);
   while (!Serial) {
     // some boards need to wait to ensure access to serial over USB
@@ -130,26 +130,10 @@ void loop() {
       Serial.print(pipe);                     // print the pipe number
       Serial.print(F(": "));
       Serial.println(payload);                // print the payload's value
-      if(payload == 2){
-          digitalWrite(2, HIGH);
-          digitalWrite(3, LOW);
-          digitalWrite(4, LOW);
-      }
-      if(payload == 3){
-        digitalWrite(3, HIGH);
-        digitalWrite(2, LOW);
-        digitalWrite(4, LOW);
+      if(payload == 1){
+          digitalWrite(led_1, HIGH);
         }
-      if(payload == 4){
-        digitalWrite(4, HIGH);
-        digitalWrite(3, LOW);
-        digitalWrite(2, LOW);
-        }
-      if(payload == 0){
-          digitalWrite(2, LOW);
-          digitalWrite(3, LOW);
-          digitalWrite(4, LOW);
-        }
+        else{ digitalWrite(led_1, HIGH);
     }
   } // role
 
@@ -171,6 +155,7 @@ void loop() {
       Serial.println(F("*** CHANGING TO RECEIVE ROLE -- PRESS 'T' TO SWITCH BACK"));
       radio.startListening();
     }
+  }
   }
 
 } // loop
