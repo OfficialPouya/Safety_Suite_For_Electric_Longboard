@@ -47,9 +47,10 @@ void loop() {
     
     if(dataRecieve.error_code == 1){digitalWrite(led_pin, HIGH);}
     else{digitalWrite(led_pin, LOW);}
-//    Serial.println("Recieve: ");
-//    Serial.println(dataRecieve.error_code);
-//    Serial.print("\n");
+    Serial.println("Recieve: ");
+    Serial.println("ERROR CODE:");
+    Serial.println(dataRecieve.error_code);
+    Serial.print("\n");
   }
   delay(200);
   boolean success = nchuk.update();
