@@ -34,9 +34,7 @@ bool role = false;  // true = TX role, false = RX role
 // on every successful transmission
 float payload = 0.0;
 const int button_1_pin = 2;
-int button_1_state = 0;  
-int button_2_state = 0;  
-int button_3_state = 0;  
+int button_1_state = 0;    
 void setup() {
 
   Serial.begin(115200);
@@ -107,10 +105,8 @@ void loop() {
 
     if (report) {
       button_1_state = digitalRead(button_1_pin);
-      if (button_1_state == LOW && payload < 2){payload=2;}
-      else if (button_1_state ==  LOW && payload == 2){payload=3;}
-      else if (button_1_state == LOW && payload == 3){payload=4;}
-      else if (button_1_state == LOW && payload == 4){payload=0;}
+      if (button_1_state == LOW){payload=1;}
+      else{payload=0;}
       Serial.print(F("Transmission successful! "));          // payload was delivered
       Serial.print(F("Time to transmit = "));
       Serial.print(end_timer - start_timer);                 // print the timer result
