@@ -40,6 +40,7 @@ void setup() {
 }
 
 void loop() {
+  if(!myRadio.available()){Serial.println("Not conneced");}
   if ( myRadio.available()) {
     while (myRadio.available()){
       myRadio.read( &dataRecieve, sizeof(dataRecieve) );
@@ -66,7 +67,7 @@ void loop() {
     
     dataTransmit.dead_man_switch = nchuk.buttonZ(); // reads state of z
     dataTransmit.speed_val = nchuk.joyY(); // sends y value for nunchuck
-    Serial.print("SENT");
+    Serial.println("SENT");
     Serial.print("Dead Man:");
     Serial.println(dataTransmit.dead_man_switch);
     Serial.print("Speed:");

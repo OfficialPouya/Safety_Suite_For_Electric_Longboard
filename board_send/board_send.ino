@@ -40,12 +40,12 @@ void loop() {
       myRadio.read( &dataRecieve, sizeof(dataRecieve) );
     }
     
-    Serial.println("Recieved");
-    Serial.println("Dead-Man");
-    Serial.println(dataRecieve.dead_man_switch);
-    Serial.println("Speed");
-    Serial.println(dataRecieve.speed_val);
-    Serial.print("\n");
+//    Serial.println("Recieved");
+//    Serial.println("Dead-Man");
+//    Serial.println(dataRecieve.dead_man_switch);
+//    Serial.println("Speed");
+//    Serial.println(dataRecieve.speed_val);
+//    Serial.print("\n");
   }
   delay(200);
   int button_state = 0;
@@ -55,9 +55,9 @@ void loop() {
   else{code_to_send = 0;}
   
   dataTransmit.error_code = code_to_send  ;
-  Serial.println("Sent ");
-  Serial.println(dataTransmit.error_code);
-  Serial.print("\n");
+//  Serial.println("Sent ");
+//  Serial.println(dataTransmit.error_code);
+//  Serial.print("\n");
   
   myRadio.openWritingPipe(addresses[0]);
   myRadio.write(&dataTransmit, sizeof(dataTransmit));
