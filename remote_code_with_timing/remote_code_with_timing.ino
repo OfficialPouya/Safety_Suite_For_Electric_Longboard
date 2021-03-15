@@ -40,6 +40,7 @@ void setup() {
 
 void loop() {
    timer = millis();
+//   while (!myRadio.available()){Serial.println("No Connection!");}
    while (myRadio.available() && timer % 50 != 0){
       myRadio.read( &dataRecieve, sizeof(dataRecieve) );
       if(dataRecieve.error_code == 1){digitalWrite(led_pin, HIGH);}
