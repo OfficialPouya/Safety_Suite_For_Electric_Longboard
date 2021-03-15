@@ -34,17 +34,16 @@ void setup() {
 
 void loop() {
    timer = millis();
-   while (myRadio.available() && timer % 169 != 0){
-      myRadio.read( &dataRecieve, sizeof(dataRecieve) );
-      Serial.println("Dead-Man");
-      Serial.println(dataRecieve.dead_man_switch);
-      Serial.println("Speed");
-      Serial.println(dataRecieve.speed_val);
-      Serial.print("\n");
-  }
-    
-   if(timer % 169 == 0){
-      Serial.println("169 ms has passed");
+     while (myRadio.available() && timer % 69 != 0){
+        myRadio.read( &dataRecieve, sizeof(dataRecieve) );
+        Serial.println("Dead-Man");
+        Serial.println(dataRecieve.dead_man_switch);
+        Serial.println("Speed");
+        Serial.println(dataRecieve.speed_val);
+        Serial.print("\n");
+    }
+   if(timer % 69 == 0){
+      Serial.println("69 ms has passed");
       int button_state = 0;
       button_state = digitalRead(button_pin);
       myRadio.stopListening();
@@ -55,7 +54,6 @@ void loop() {
       Serial.println("Sent ");
       Serial.println(dataTransmit.error_code);
       Serial.print("\n");
-  
       myRadio.openWritingPipe(addresses[0]);
       myRadio.write(&dataTransmit, sizeof(dataTransmit));
       myRadio.openReadingPipe(1, addresses[0]);
