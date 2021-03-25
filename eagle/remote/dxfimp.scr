@@ -1,7 +1,7 @@
 # dxfimport generated script file.
 Grid mic 1 off;
 Set Wire_Bend 2;
-CHANGE LAYER 230;
+CHANGE LAYER 200;
 Change Font Vector;
 Wire 1 (-19188.42 -81710.49) -0.05 (-19184.30 -81710.48);
 Wire 1 (-19184.30 -81710.48) -99.41 (-14744.89 -86946.43);
