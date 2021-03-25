@@ -241,10 +241,10 @@
 <text x="-38.608" y="-1.397" size="0.508" layer="25" font="vector" ratio="15" rot="R180">PROG</text>
 <text x="-37.465" y="26.289" size="0.508" layer="25" font="vector" ratio="15" rot="R180">UART</text>
 <text x="-29.845" y="27.559" size="0.508" layer="25" font="vector" ratio="15" rot="R180">HALL</text>
-<text x="-22.352" y="40.64" size="0.508" layer="25" font="vector" ratio="15" rot="R180">DEADMAN</text>
+<text x="-23.4188" y="40.6654" size="0.508" layer="25" font="vector" ratio="15" rot="R180">DEADMAN</text>
 <text x="-29.845" y="36.576" size="0.508" layer="25" font="vector" ratio="15" rot="R180">MP BUTTON</text>
 <text x="-29.845" y="45.593" size="0.508" layer="25" font="vector" ratio="15" rot="R180">LED</text>
-<text x="-45.974" y="-18.415" size="0.508" layer="25" font="vector" ratio="15" rot="R270">BATT</text>
+<text x="-45.5168" y="-17.526" size="0.508" layer="25" font="vector" ratio="15" rot="R270">BATT</text>
 <text x="-42.799" y="-8.509" size="0.508" layer="25" font="vector" ratio="15">CHRG LED</text>
 <text x="-35.433" y="-25.019" size="0.508" layer="25" font="vector" ratio="15">MAIN SWITCH</text>
 <text x="-27.432" y="-25.019" size="0.508" layer="25" font="vector" ratio="15">USB PWR</text>
