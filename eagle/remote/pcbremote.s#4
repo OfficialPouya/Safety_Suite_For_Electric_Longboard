@@ -12560,76 +12560,76 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <schematic_group name="LIPO_CHARGING"/>
 </groups>
 <parts>
-<part name="CONN_BAT" library="adafruit" deviceset="JST_2PIN" device="-THM" value="SOCKET 1x2"/>
-<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1u"/>
-<part name="PROG_CONN" library="SparkFun-Connectors" deviceset="CONN_03X2" device="FEMALE" value="FEMALE 2x3"/>
-<part name="NRF_CONN" library="SparkFun-Connectors" deviceset="CONN_04X2" device="" value="FEMALE 2x4"/>
+<part name="CN1" library="adafruit" deviceset="JST_2PIN" device="-THM" value="SOCKET 1x2"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1u"/>
+<part name="J5" library="SparkFun-Connectors" deviceset="CONN_03X2" device="FEMALE" value="FEMALE 2x3"/>
+<part name="J4" library="SparkFun-Connectors" deviceset="CONN_04X2" device="" value="FEMALE 2x4"/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
 <part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value=".1u"/>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value=".1u"/>
 <part name="SUPPLY15" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
-<part name="U3" library="LTC_1450" deviceset="LTC1540CS8PBF" device=""/>
+<part name="U1" library="LTC_1450" deviceset="LTC1540CS8PBF" device=""/>
 <part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND12" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY19" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22p"/>
-<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22p"/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
-<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value=".1u"/>
+<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22p"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22p"/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value=".1u"/>
 <part name="GND13" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY22" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
-<part name="Y2" library="SparkFun-Clocks" deviceset="CRYSTAL-8MHZ" device="SMD-5X3.2" value="8MHz"/>
-<part name="U4" library="adafruit" deviceset="MCP73831" device="/OT"/>
-<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="470"/>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7u"/>
+<part name="Y1" library="SparkFun-Clocks" deviceset="CRYSTAL-8MHZ" device="SMD-5X3.2" value="8MHz"/>
+<part name="IC1" library="adafruit" deviceset="MCP73831" device="/OT"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="470"/>
+<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7u"/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="V_BATT" device=""/>
-<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2k"/>
-<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7u"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2k"/>
+<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7u"/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value=".1u"/>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value=".1u"/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND15" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="U2" library="SparkFun-IC-Microcontroller" deviceset="ATMEGA328P_TQFP" device="" value="ATMEGA328P_TQFP"/>
-<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
-<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
+<part name="U4" library="SparkFun-IC-Microcontroller" deviceset="ATMEGA328P_TQFP" device="" value="ATMEGA328P_TQFP"/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="USB_IN" library="SparkFun-Retired" deviceset="CONN_02" device="" value="FEMALE 1x2"/>
-<part name="U6" library="MIC5301" deviceset="MIC5301-3.3YD5-TR" device=""/>
-<part name="U5" library="LTC4412" deviceset="LTC4412ES6TRPBF" device=""/>
-<part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1u"/>
+<part name="J1" library="SparkFun-Retired" deviceset="CONN_02" device="" value="FEMALE 1x2"/>
+<part name="U3" library="MIC5301" deviceset="MIC5301-3.3YD5-TR" device=""/>
+<part name="U2" library="LTC4412" deviceset="LTC4412ES6TRPBF" device=""/>
+<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1u"/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.01u"/>
+<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.01u"/>
 <part name="GND14" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="V_BATT" device=""/>
-<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="470k"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="470k"/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="Q1" library="FDC638P" deviceset="FDC638P" device=""/>
 <part name="D1" library="adafruit" deviceset="DIODE" device="SOD-123"/>
-<part name="LED_EXT" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-02-PIN" device="-ROUND-PAD"/>
-<part name="OLED_CONN" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-04-PIN" device="-ROUND-PAD"/>
+<part name="X2" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-02-PIN" device="-ROUND-PAD"/>
+<part name="X1" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-04-PIN" device="-ROUND-PAD"/>
 <part name="GND17" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="MASTER_SW" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
-<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
-<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
+<part name="J2" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
+<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="V_BATT" device=""/>
 <part name="GND18" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="TRIGGER" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-02-PIN" device="-ROUND-PAD"/>
+<part name="X3" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-02-PIN" device="-ROUND-PAD"/>
 <part name="GND19" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="HALL" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-02-PIN" device="-ROUND-PAD"/>
+<part name="X4" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-02-PIN" device="-ROUND-PAD"/>
 <part name="GND20" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="UART" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
+<part name="J3" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
 <part name="GND21" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="VR1" library="3296W-1-502" deviceset="3296W-1-502" device=""/>
 </parts>
@@ -12638,19 +12638,19 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <plain>
 </plain>
 <instances>
-<instance part="CONN_BAT" gate="G$1" x="297.18" y="91.44" smashed="yes" grouprefs="LIPO_CHARGING">
+<instance part="CN1" gate="G$1" x="297.18" y="91.44" smashed="yes" grouprefs="LIPO_CHARGING">
 <attribute name="NAME" x="290.83" y="97.155" size="1.778" layer="95"/>
 <attribute name="VALUE" x="290.83" y="86.36" size="1.778" layer="96"/>
 </instance>
-<instance part="C9" gate="G$1" x="93.98" y="165.1" smashed="yes" grouprefs="LINEAR_REGULATOR">
+<instance part="C1" gate="G$1" x="93.98" y="165.1" smashed="yes" grouprefs="LINEAR_REGULATOR">
 <attribute name="NAME" x="94.996" y="165.735" size="1.778" layer="95"/>
 <attribute name="VALUE" x="94.996" y="160.909" size="1.778" layer="96"/>
 </instance>
-<instance part="PROG_CONN" gate="G$1" x="350.52" y="139.7" smashed="yes" grouprefs="ATMEGA328P">
+<instance part="J5" gate="G$1" x="350.52" y="139.7" smashed="yes" grouprefs="ATMEGA328P">
 <attribute name="NAME" x="346.964" y="145.288" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="347.218" y="133.858" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="NRF_CONN" gate="G$1" x="350.52" y="167.64" smashed="yes" grouprefs="ATMEGA328P">
+<instance part="J4" gate="G$1" x="350.52" y="167.64" smashed="yes" grouprefs="ATMEGA328P">
 <attribute name="VALUE" x="346.71" y="160.274" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="346.456" y="175.768" size="1.778" layer="95" font="vector"/>
 </instance>
@@ -12666,14 +12666,14 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <instance part="SUPPLY10" gate="G$1" x="175.26" y="165.1" smashed="yes" grouprefs="LINEAR_REGULATOR">
 <attribute name="VALUE" x="175.26" y="167.894" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="C2" gate="G$1" x="187.96" y="176.53" smashed="yes" grouprefs="ATMEGA328P">
+<instance part="C4" gate="G$1" x="187.96" y="176.53" smashed="yes" grouprefs="ATMEGA328P">
 <attribute name="NAME" x="188.976" y="177.165" size="1.778" layer="95"/>
 <attribute name="VALUE" x="188.976" y="172.339" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY15" gate="G$1" x="93.98" y="175.514" smashed="yes" grouprefs="LINEAR_REGULATOR">
 <attribute name="VALUE" x="93.98" y="178.308" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="U3" gate="A" x="93.98" y="91.44" smashed="yes" grouprefs="VOLTAGE_MONITOR">
+<instance part="U1" gate="A" x="93.98" y="91.44" smashed="yes" grouprefs="VOLTAGE_MONITOR">
 <attribute name="NAME" x="109.5756" y="100.5586" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 </instance>
 <instance part="GND11" gate="1" x="76.2" y="60.96" smashed="yes" grouprefs="VOLTAGE_MONITOR">
@@ -12685,19 +12685,19 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <instance part="SUPPLY19" gate="G$1" x="365.76" y="175.26" smashed="yes" grouprefs="ATMEGA328P">
 <attribute name="VALUE" x="365.76" y="179.07" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="C5" gate="G$1" x="210.82" y="149.86" smashed="yes" grouprefs="ATMEGA328P">
+<instance part="C7" gate="G$1" x="210.82" y="149.86" smashed="yes" grouprefs="ATMEGA328P">
 <attribute name="NAME" x="211.963" y="147.828" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="209.931" y="147.32" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C4" gate="G$1" x="200.66" y="149.86" smashed="yes" grouprefs="ATMEGA328P">
+<instance part="C6" gate="G$1" x="200.66" y="149.86" smashed="yes" grouprefs="ATMEGA328P">
 <attribute name="NAME" x="199.517" y="150.876" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="199.136" y="147.193" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R1" gate="G$1" x="213.36" y="187.96" smashed="yes" rot="MR180" grouprefs="ATMEGA328P">
+<instance part="R2" gate="G$1" x="213.36" y="187.96" smashed="yes" rot="MR180" grouprefs="ATMEGA328P">
 <attribute name="NAME" x="213.36" y="184.8866" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="214.63" y="186.69" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="C6" gate="G$1" x="213.36" y="168.91" smashed="yes" rot="R270" grouprefs="ATMEGA328P">
+<instance part="C8" gate="G$1" x="213.36" y="168.91" smashed="yes" rot="R270" grouprefs="ATMEGA328P">
 <attribute name="NAME" x="214.249" y="169.164" size="1.778" layer="95"/>
 <attribute name="VALUE" x="210.947" y="170.688" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -12707,18 +12707,18 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <instance part="SUPPLY22" gate="G$1" x="71.12" y="71.12" smashed="yes" grouprefs="VOLTAGE_MONITOR">
 <attribute name="VALUE" x="71.12" y="73.914" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="Y2" gate="G$1" x="220.98" y="157.48" smashed="yes" rot="R270" grouprefs="ATMEGA328P">
+<instance part="Y1" gate="G$1" x="220.98" y="157.48" smashed="yes" rot="R270" grouprefs="ATMEGA328P">
 <attribute name="NAME" x="223.52" y="156.972" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="215.9" y="157.988" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="U4" gate="G$1" x="254" y="96.52" smashed="yes" grouprefs="LIPO_CHARGING">
+<instance part="IC1" gate="G$1" x="254" y="96.52" smashed="yes" grouprefs="LIPO_CHARGING">
 <attribute name="NAME" x="246.38" y="86.36" size="1.778" layer="95"/>
 </instance>
-<instance part="R6" gate="G$1" x="226.06" y="91.44" smashed="yes" rot="R180" grouprefs="LIPO_CHARGING">
+<instance part="R3" gate="G$1" x="226.06" y="91.44" smashed="yes" rot="R180" grouprefs="LIPO_CHARGING">
 <attribute name="NAME" x="224.79" y="92.9386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="227.33" y="90.678" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C8" gate="G$1" x="281.94" y="96.52" smashed="yes" grouprefs="LIPO_CHARGING">
+<instance part="C10" gate="G$1" x="281.94" y="96.52" smashed="yes" grouprefs="LIPO_CHARGING">
 <attribute name="NAME" x="278.257" y="94.488" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="285.369" y="98.044" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -12728,11 +12728,11 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <instance part="SUPPLY2" gate="G$1" x="281.94" y="104.14" smashed="yes" grouprefs="LIPO_CHARGING">
 <attribute name="VALUE" x="281.94" y="109.474" size="1.778" layer="96" rot="R180" align="bottom-center"/>
 </instance>
-<instance part="R5" gate="G$1" x="274.32" y="91.44" smashed="yes" rot="R270" grouprefs="LIPO_CHARGING">
+<instance part="R4" gate="G$1" x="274.32" y="91.44" smashed="yes" rot="R270" grouprefs="LIPO_CHARGING">
 <attribute name="NAME" x="272.8214" y="90.17" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="275.082" y="92.71" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C7" gate="G$1" x="236.22" y="99.06" smashed="yes" grouprefs="LIPO_CHARGING">
+<instance part="C9" gate="G$1" x="236.22" y="99.06" smashed="yes" grouprefs="LIPO_CHARGING">
 <attribute name="NAME" x="232.537" y="97.028" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="239.649" y="100.584" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -12745,7 +12745,7 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <instance part="GND4" gate="1" x="193.04" y="166.37" smashed="yes" grouprefs="ATMEGA328P">
 <attribute name="VALUE" x="193.04" y="166.116" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C3" gate="G$1" x="198.12" y="176.53" smashed="yes" grouprefs="ATMEGA328P">
+<instance part="C5" gate="G$1" x="198.12" y="176.53" smashed="yes" grouprefs="ATMEGA328P">
 <attribute name="NAME" x="199.136" y="177.165" size="1.778" layer="95"/>
 <attribute name="VALUE" x="199.136" y="172.339" size="1.778" layer="96"/>
 </instance>
@@ -12764,34 +12764,34 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <instance part="GND2" gate="1" x="203.2" y="81.28" smashed="yes" grouprefs="LIPO_CHARGING">
 <attribute name="VALUE" x="203.2" y="81.026" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="U2" gate="U1" x="251.46" y="154.94" smashed="yes" grouprefs="ATMEGA328P">
+<instance part="U4" gate="U1" x="251.46" y="154.94" smashed="yes" grouprefs="ATMEGA328P">
 <attribute name="NAME" x="231.14" y="188.722" size="1.778" layer="95"/>
 <attribute name="VALUE" x="231.14" y="121.92" size="1.778" layer="96"/>
 </instance>
-<instance part="R7" gate="G$1" x="276.86" y="170.18" smashed="yes" rot="MR180">
+<instance part="R5" gate="G$1" x="276.86" y="170.18" smashed="yes" rot="MR180">
 <attribute name="NAME" x="276.86" y="170.9166" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="278.13" y="172.72" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="R8" gate="G$1" x="276.86" y="167.64" smashed="yes" rot="MR180">
+<instance part="R6" gate="G$1" x="276.86" y="167.64" smashed="yes" rot="MR180">
 <attribute name="NAME" x="276.86" y="164.5666" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="278.13" y="166.37" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="SUPPLY3" gate="G$1" x="292.1" y="167.64" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="291.592" y="170.688" size="1.778" layer="96" rot="MR0" align="bottom-center"/>
 </instance>
-<instance part="USB_IN" gate="G$1" x="193.04" y="99.06" smashed="yes" grouprefs="LIPO_CHARGING">
+<instance part="J1" gate="G$1" x="193.04" y="99.06" smashed="yes" grouprefs="LIPO_CHARGING">
 <attribute name="VALUE" x="190.5" y="94.234" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="190.5" y="104.648" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="U6" gate="A" x="114.3" y="167.64" smashed="yes" grouprefs="LINEAR_REGULATOR">
+<instance part="U3" gate="A" x="114.3" y="167.64" smashed="yes" grouprefs="LINEAR_REGULATOR">
 <attribute name="NAME" x="137.5156" y="176.7586" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="136.8806" y="174.2186" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
-<instance part="U5" gate="A" x="106.68" y="223.52" smashed="yes">
+<instance part="U2" gate="A" x="106.68" y="223.52" smashed="yes">
 <attribute name="NAME" x="122.2756" y="232.6386" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="121.6406" y="230.0986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
-<instance part="C20" gate="G$1" x="175.26" y="162.56" smashed="yes" grouprefs="LINEAR_REGULATOR">
+<instance part="C3" gate="G$1" x="175.26" y="162.56" smashed="yes" grouprefs="LINEAR_REGULATOR">
 <attribute name="NAME" x="176.276" y="163.195" size="1.778" layer="95"/>
 <attribute name="VALUE" x="176.276" y="158.369" size="1.778" layer="96"/>
 </instance>
@@ -12801,7 +12801,7 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <instance part="GND6" gate="1" x="175.26" y="152.4" smashed="yes">
 <attribute name="VALUE" x="175.26" y="152.146" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C1" gate="G$1" x="167.64" y="160.02" smashed="yes">
+<instance part="C2" gate="G$1" x="167.64" y="160.02" smashed="yes">
 <attribute name="NAME" x="168.656" y="160.655" size="1.778" layer="95"/>
 <attribute name="VALUE" x="168.656" y="155.829" size="1.778" layer="96"/>
 </instance>
@@ -12814,7 +12814,7 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <instance part="SUPPLY6" gate="G$1" x="104.14" y="223.52" smashed="yes">
 <attribute name="VALUE" x="104.14" y="228.854" size="1.778" layer="96" rot="R180" align="bottom-center"/>
 </instance>
-<instance part="R9" gate="G$1" x="165.1" y="226.06" smashed="yes" rot="MR90">
+<instance part="R1" gate="G$1" x="165.1" y="226.06" smashed="yes" rot="MR90">
 <attribute name="NAME" x="168.1734" y="226.06" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="166.37" y="227.33" size="1.778" layer="96" rot="MR90"/>
 </instance>
@@ -12832,24 +12832,24 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <attribute name="NAME" x="149.86" y="241.3" size="1.27" layer="95"/>
 <attribute name="VALUE" x="149.86" y="234.95" size="1.27" layer="96"/>
 </instance>
-<instance part="LED_EXT" gate="-2" x="215.9" y="93.98" smashed="yes" rot="R180">
+<instance part="X2" gate="-2" x="215.9" y="93.98" smashed="yes" rot="R180">
 <attribute name="NAME" x="213.36" y="94.742" size="1.524" layer="95" rot="R180"/>
 </instance>
-<instance part="LED_EXT" gate="-1" x="215.9" y="91.44" smashed="yes" rot="R180">
+<instance part="X2" gate="-1" x="215.9" y="91.44" smashed="yes" rot="R180">
 <attribute name="NAME" x="213.36" y="92.202" size="1.524" layer="95" rot="R180"/>
 <attribute name="VALUE" x="229.362" y="90.043" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="OLED_CONN" gate="-1" x="68.58" y="134.62" smashed="yes">
+<instance part="X1" gate="-1" x="68.58" y="134.62" smashed="yes">
 <attribute name="NAME" x="71.12" y="133.858" size="1.524" layer="95"/>
 <attribute name="VALUE" x="67.818" y="136.017" size="1.778" layer="96"/>
 </instance>
-<instance part="OLED_CONN" gate="-2" x="68.58" y="132.08" smashed="yes">
+<instance part="X1" gate="-2" x="68.58" y="132.08" smashed="yes">
 <attribute name="NAME" x="71.12" y="131.318" size="1.524" layer="95"/>
 </instance>
-<instance part="OLED_CONN" gate="-3" x="68.58" y="129.54" smashed="yes">
+<instance part="X1" gate="-3" x="68.58" y="129.54" smashed="yes">
 <attribute name="NAME" x="71.12" y="128.778" size="1.524" layer="95"/>
 </instance>
-<instance part="OLED_CONN" gate="-4" x="68.58" y="127" smashed="yes">
+<instance part="X1" gate="-4" x="68.58" y="127" smashed="yes">
 <attribute name="NAME" x="71.12" y="126.238" size="1.524" layer="95"/>
 </instance>
 <instance part="GND17" gate="1" x="40.64" y="132.08" smashed="yes">
@@ -12858,15 +12858,15 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <instance part="SUPPLY9" gate="G$1" x="60.96" y="132.08" smashed="yes" rot="R90">
 <attribute name="VALUE" x="54.61" y="132.588" size="1.778" layer="96" rot="R180" align="bottom-center"/>
 </instance>
-<instance part="MASTER_SW" gate="J$1" x="299.72" y="109.22" smashed="yes" rot="R270">
+<instance part="J2" gate="J$1" x="299.72" y="109.22" smashed="yes" rot="R270">
 <attribute name="VALUE" x="289.814" y="119.38" size="1.778" layer="96" font="vector" rot="R270"/>
 <attribute name="NAME" x="305.308" y="111.76" size="1.778" layer="95" font="vector" rot="R270"/>
 </instance>
-<instance part="R10" gate="G$1" x="320.04" y="182.88" smashed="yes" rot="MR90">
+<instance part="R7" gate="G$1" x="320.04" y="182.88" smashed="yes" rot="MR90">
 <attribute name="NAME" x="319.3034" y="182.88" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="317.5" y="184.15" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="R11" gate="G$1" x="320.04" y="172.72" smashed="yes" rot="MR90">
+<instance part="R8" gate="G$1" x="320.04" y="172.72" smashed="yes" rot="MR90">
 <attribute name="NAME" x="319.3034" y="172.72" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="317.5" y="173.99" size="1.778" layer="96" rot="MR90"/>
 </instance>
@@ -12876,27 +12876,27 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <instance part="GND18" gate="1" x="320.04" y="165.1" smashed="yes">
 <attribute name="VALUE" x="320.04" y="164.846" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="TRIGGER" gate="-2" x="299.72" y="157.48" smashed="yes">
+<instance part="X3" gate="-2" x="299.72" y="157.48" smashed="yes">
 <attribute name="NAME" x="302.26" y="156.718" size="1.524" layer="95"/>
 </instance>
-<instance part="TRIGGER" gate="-1" x="299.72" y="154.94" smashed="yes">
+<instance part="X3" gate="-1" x="299.72" y="154.94" smashed="yes">
 <attribute name="NAME" x="302.26" y="154.178" size="1.524" layer="95"/>
 <attribute name="VALUE" x="298.958" y="156.337" size="1.778" layer="96"/>
 </instance>
 <instance part="GND19" gate="1" x="297.18" y="149.86" smashed="yes">
 <attribute name="VALUE" x="297.18" y="149.606" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="HALL" gate="-2" x="302.26" y="175.26" smashed="yes">
+<instance part="X4" gate="-2" x="302.26" y="175.26" smashed="yes">
 <attribute name="NAME" x="304.8" y="174.498" size="1.524" layer="95"/>
 </instance>
-<instance part="HALL" gate="-1" x="302.26" y="172.72" smashed="yes">
+<instance part="X4" gate="-1" x="302.26" y="172.72" smashed="yes">
 <attribute name="NAME" x="307.34" y="171.958" size="1.524" layer="95"/>
 <attribute name="VALUE" x="301.498" y="174.117" size="1.778" layer="96"/>
 </instance>
 <instance part="GND20" gate="1" x="299.72" y="170.18" smashed="yes">
 <attribute name="VALUE" x="299.72" y="169.926" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="UART" gate="J$1" x="312.42" y="142.24" smashed="yes" rot="R90">
+<instance part="J3" gate="J$1" x="312.42" y="142.24" smashed="yes" rot="R90">
 <attribute name="VALUE" x="322.326" y="132.08" size="1.778" layer="96" font="vector" rot="R90"/>
 <attribute name="NAME" x="306.832" y="139.7" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
@@ -12913,41 +12913,41 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="C9" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="93.98" y1="154.94" x2="93.98" y2="160.02" width="0.1524" layer="91" grouprefs="LINEAR_REGULATOR"/>
 </segment>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
-<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="168.91" x2="208.28" y2="168.91" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="200.66" y1="144.78" x2="205.74" y2="144.78" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
-<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="210.82" y1="144.78" x2="205.74" y2="144.78" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <junction x="205.74" y="144.78" grouprefs="ATMEGA328P"/>
 </segment>
 <segment>
-<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="187.96" y1="171.45" x2="187.96" y2="168.91" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <wire x1="187.96" y1="168.91" x2="193.04" y2="168.91" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
-<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="171.45" x2="198.12" y2="168.91" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <wire x1="198.12" y1="168.91" x2="193.04" y2="168.91" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <junction x="193.04" y="168.91" grouprefs="ATMEGA328P"/>
 </segment>
 <segment>
-<pinref part="NRF_CONN" gate="G$1" pin="1"/>
+<pinref part="J4" gate="G$1" pin="1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="342.9" y1="172.72" x2="332.74" y2="172.72" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <wire x1="332.74" y1="172.72" x2="332.74" y2="165.1" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 </segment>
 <segment>
-<pinref part="PROG_CONN" gate="G$1" pin="6"/>
+<pinref part="J5" gate="G$1" pin="6"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="358.14" y1="137.16" x2="365.76" y2="137.16" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 </segment>
@@ -12958,95 +12958,95 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <wire x1="85.344" y1="86.36" x2="76.2" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U3" gate="A" pin="GND"/>
+<pinref part="U1" gate="A" pin="GND"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="96.52" y1="63.5" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U3" gate="A" pin="V-"/>
+<pinref part="U1" gate="A" pin="V-"/>
 <wire x1="96.52" y1="71.12" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="71.12" x2="93.98" y2="63.5" width="0.1524" layer="91" grouprefs="VOLTAGE_MONITOR"/>
 <junction x="93.98" y="63.5"/>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="U4" gate="G$1" pin="VSS"/>
+<pinref part="IC1" gate="G$1" pin="VSS"/>
 <wire x1="269.24" y1="91.44" x2="269.24" y2="83.82" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
 <wire x1="269.24" y1="83.82" x2="281.94" y2="83.82" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="274.32" y1="86.36" x2="281.94" y2="86.36" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
 <wire x1="281.94" y1="86.36" x2="281.94" y2="83.82" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
 <junction x="281.94" y="83.82" grouprefs="LIPO_CHARGING"/>
 <junction x="281.94" y="86.36" grouprefs="LIPO_CHARGING"/>
-<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="281.94" y1="91.44" x2="281.94" y2="86.36" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
-<pinref part="CONN_BAT" gate="G$1" pin="2"/>
+<pinref part="CN1" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="91.44" x2="289.56" y2="91.44" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
 <wire x1="289.56" y1="91.44" x2="289.56" y2="83.82" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
 <wire x1="289.56" y1="83.82" x2="281.94" y2="83.82" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
 </segment>
 <segment>
-<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="C9" gate="G$1" pin="2"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="236.22" y1="93.98" x2="236.22" y2="83.82" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="USB_IN" gate="G$1" pin="1"/>
+<pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="200.66" y1="99.06" x2="203.2" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="99.06" x2="203.2" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U1" pin="AGND"/>
+<pinref part="U4" gate="U1" pin="AGND"/>
 <wire x1="228.6" y1="129.54" x2="223.52" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="223.52" y1="129.54" x2="223.52" y2="127" width="0.1524" layer="91"/>
-<pinref part="U2" gate="U1" pin="GND"/>
+<pinref part="U4" gate="U1" pin="GND"/>
 <wire x1="228.6" y1="127" x2="223.52" y2="127" width="0.1524" layer="91"/>
 <junction x="223.52" y="127"/>
 </segment>
 <segment>
-<pinref part="U6" gate="A" pin="GND"/>
+<pinref part="U3" gate="A" pin="GND"/>
 <wire x1="116.84" y1="165.1" x2="104.14" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="165.1" x2="104.14" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C20" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="175.26" y1="157.48" x2="175.26" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="104.14" y1="215.9" x2="104.14" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="U5" gate="A" pin="CTL"/>
-<pinref part="U5" gate="A" pin="GND"/>
+<pinref part="U2" gate="A" pin="CTL"/>
+<pinref part="U2" gate="A" pin="GND"/>
 <wire x1="109.22" y1="218.44" x2="109.22" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="218.44" x2="109.22" y2="218.44" width="0.1524" layer="91"/>
 <junction x="109.22" y="218.44"/>
 </segment>
 <segment>
-<pinref part="OLED_CONN" gate="-1" pin="S"/>
+<pinref part="X1" gate="-1" pin="S"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="66.04" y1="134.62" x2="40.64" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="HALL" gate="-1" pin="S"/>
+<pinref part="X4" gate="-1" pin="S"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="TRIGGER" gate="-1" pin="S"/>
+<pinref part="X3" gate="-1" pin="S"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="297.18" y1="154.94" x2="297.18" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="UART" gate="J$1" pin="1"/>
+<pinref part="J3" gate="J$1" pin="1"/>
 <wire x1="314.96" y1="149.86" x2="314.96" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="152.4" x2="327.66" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
@@ -13056,17 +13056,17 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <net name="V_BATT" class="0">
 <segment>
 <pinref part="SUPPLY2" gate="G$1" pin="V_BATT"/>
-<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="C10" gate="G$1" pin="1"/>
 <wire x1="281.94" y1="104.14" x2="281.94" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U4" gate="G$1" pin="VBAT"/>
+<pinref part="IC1" gate="G$1" pin="VBAT"/>
 <wire x1="281.94" y1="101.6" x2="281.94" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="101.6" x2="281.94" y2="101.6" width="0.1524" layer="91"/>
 <junction x="281.94" y="101.6"/>
-<pinref part="MASTER_SW" gate="J$1" pin="1"/>
+<pinref part="J2" gate="J$1" pin="1"/>
 <wire x1="281.94" y1="101.6" x2="297.18" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U5" gate="A" pin="VIN"/>
+<pinref part="U2" gate="A" pin="VIN"/>
 <pinref part="SUPPLY6" gate="G$1" pin="V_BATT"/>
 <wire x1="109.22" y1="223.52" x2="104.14" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="1" pin="D3"/>
@@ -13083,25 +13083,25 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <junction x="109.22" y="223.52"/>
 </segment>
 <segment>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="SUPPLY11" gate="G$1" pin="V_BATT"/>
 </segment>
 </net>
 <net name="V_USB" class="0">
 <segment>
 <pinref part="SUPPLY5" gate="G$1" pin="V_USB"/>
-<pinref part="U4" gate="G$1" pin="VDD"/>
+<pinref part="IC1" gate="G$1" pin="VDD"/>
 <wire x1="220.98" y1="104.14" x2="220.98" y2="101.6" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
 <wire x1="220.98" y1="101.6" x2="236.22" y2="101.6" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
 <wire x1="236.22" y1="101.6" x2="241.3" y2="101.6" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
 <wire x1="220.98" y1="101.6" x2="220.98" y2="93.98" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
 <wire x1="220.98" y1="93.98" x2="218.44" y2="93.98" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
 <junction x="220.98" y="101.6" grouprefs="LIPO_CHARGING"/>
-<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C9" gate="G$1" pin="1"/>
 <junction x="236.22" y="101.6" grouprefs="LIPO_CHARGING"/>
 <wire x1="200.66" y1="101.6" x2="220.98" y2="101.6" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
-<pinref part="USB_IN" gate="G$1" pin="2"/>
-<pinref part="LED_EXT" gate="-2" pin="S"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="X2" gate="-2" pin="S"/>
 </segment>
 <segment>
 <pinref part="SUPPLY7" gate="G$1" pin="V_USB"/>
@@ -13111,11 +13111,11 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 </net>
 <net name="3.3V" class="0">
 <segment>
-<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
 <wire x1="187.96" y1="179.07" x2="187.96" y2="180.34" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <wire x1="187.96" y1="180.34" x2="193.04" y2="180.34" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
-<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="198.12" y1="180.34" x2="198.12" y2="179.07" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <junction x="193.04" y="180.34" grouprefs="ATMEGA328P"/>
 <junction x="226.06" y="177.8" grouprefs="ATMEGA328P"/>
@@ -13124,74 +13124,74 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <wire x1="198.12" y1="180.34" x2="226.06" y2="180.34" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <wire x1="226.06" y1="180.34" x2="226.06" y2="177.8" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <junction x="198.12" y="180.34" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="VCC"/>
+<pinref part="U4" gate="U1" pin="VCC"/>
 <wire x1="228.6" y1="177.8" x2="226.06" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="U2" gate="U1" pin="AVCC"/>
+<pinref part="U4" gate="U1" pin="AVCC"/>
 <wire x1="228.6" y1="180.34" x2="226.06" y2="180.34" width="0.1524" layer="91"/>
 <junction x="226.06" y="180.34"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
 <wire x1="208.28" y1="187.96" x2="205.74" y2="187.96" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 </segment>
 <segment>
 <pinref part="SUPPLY10" gate="G$1" pin="3.3V"/>
 <wire x1="167.64" y1="165.1" x2="175.26" y2="165.1" width="0.1524" layer="91" grouprefs="LINEAR_REGULATOR"/>
-<pinref part="U6" gate="A" pin="OUT"/>
-<pinref part="C20" gate="G$1" pin="1"/>
+<pinref part="U3" gate="A" pin="OUT"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 <junction x="175.26" y="165.1"/>
 </segment>
 <segment>
-<pinref part="NRF_CONN" gate="G$1" pin="2"/>
+<pinref part="J4" gate="G$1" pin="2"/>
 <pinref part="SUPPLY19" gate="G$1" pin="3.3V"/>
 <wire x1="358.14" y1="172.72" x2="365.76" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="365.76" y1="172.72" x2="365.76" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="281.94" y1="170.18" x2="281.94" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
 <wire x1="281.94" y1="167.64" x2="292.1" y2="167.64" width="0.1524" layer="91"/>
 <junction x="281.94" y="167.64"/>
 </segment>
 <segment>
-<pinref part="OLED_CONN" gate="-2" pin="S"/>
+<pinref part="X1" gate="-2" pin="S"/>
 <pinref part="SUPPLY9" gate="G$1" pin="3.3V"/>
 <wire x1="66.04" y1="132.08" x2="60.96" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MISO" class="0">
 <segment>
-<pinref part="NRF_CONN" gate="G$1" pin="7"/>
+<pinref part="J4" gate="G$1" pin="7"/>
 <wire x1="342.9" y1="165.1" x2="337.82" y2="165.1" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="337.82" y="165.1" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
 </segment>
 <segment>
 <wire x1="289.56" y1="129.54" x2="271.78" y2="129.54" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="278.384" y="129.54" size="1.778" layer="95" rot="MR0" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PB4(MISO)"/>
+<pinref part="U4" gate="U1" pin="PB4(MISO)"/>
 </segment>
 <segment>
-<pinref part="PROG_CONN" gate="G$1" pin="1"/>
+<pinref part="J5" gate="G$1" pin="1"/>
 <wire x1="342.9" y1="142.24" x2="337.82" y2="142.24" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="337.82" y="142.24" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
-<pinref part="NRF_CONN" gate="G$1" pin="5"/>
+<pinref part="J4" gate="G$1" pin="5"/>
 <wire x1="342.9" y1="167.64" x2="337.82" y2="167.64" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="337.82" y="167.64" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
 </segment>
 <segment>
 <wire x1="289.56" y1="127" x2="271.78" y2="127" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="277.114" y="127" size="1.778" layer="95" rot="MR0" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PB5(SCK)"/>
+<pinref part="U4" gate="U1" pin="PB5(SCK)"/>
 </segment>
 <segment>
-<pinref part="PROG_CONN" gate="G$1" pin="3"/>
+<pinref part="J5" gate="G$1" pin="3"/>
 <wire x1="342.9" y1="139.7" x2="337.82" y2="139.7" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="337.82" y="139.7" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
 </segment>
@@ -13200,22 +13200,22 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <segment>
 <wire x1="289.56" y1="132.08" x2="271.78" y2="132.08" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="278.384" y="132.08" size="1.778" layer="95" rot="MR0" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PB3(MOSI/OC2)"/>
+<pinref part="U4" gate="U1" pin="PB3(MOSI/OC2)"/>
 </segment>
 <segment>
-<pinref part="NRF_CONN" gate="G$1" pin="6"/>
+<pinref part="J4" gate="G$1" pin="6"/>
 <wire x1="358.14" y1="167.64" x2="363.22" y2="167.64" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="358.14" y="167.64" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
 </segment>
 <segment>
-<pinref part="PROG_CONN" gate="G$1" pin="4"/>
+<pinref part="J5" gate="G$1" pin="4"/>
 <wire x1="358.14" y1="139.7" x2="363.22" y2="139.7" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="358.14" y="139.7" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
 </segment>
 </net>
 <net name="VIN" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="V+"/>
+<pinref part="U1" gate="A" pin="V+"/>
 <pinref part="SUPPLY22" gate="G$1" pin="VIN"/>
 <wire x1="71.12" y1="71.12" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="68.58" x2="85.344" y2="68.58" width="0.1524" layer="91" grouprefs="VOLTAGE_MONITOR"/>
@@ -13224,19 +13224,19 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <junction x="85.344" y="68.58"/>
 </segment>
 <segment>
-<pinref part="C9" gate="G$1" pin="1"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY15" gate="G$1" pin="VIN"/>
 <wire x1="93.98" y1="175.514" x2="93.98" y2="167.64" width="0.1524" layer="91" grouprefs="LINEAR_REGULATOR"/>
-<pinref part="U6" gate="A" pin="VIN"/>
+<pinref part="U3" gate="A" pin="VIN"/>
 <wire x1="116.84" y1="167.64" x2="93.98" y2="167.64" width="0.1524" layer="91"/>
 <junction x="93.98" y="167.64"/>
 </segment>
 <segment>
-<pinref part="U5" gate="A" pin="SENSE"/>
+<pinref part="U2" gate="A" pin="SENSE"/>
 <wire x1="144.78" y1="223.52" x2="157.48" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="1" pin="S"/>
 <wire x1="157.48" y1="223.52" x2="157.48" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="165.1" y1="231.14" x2="157.48" y2="231.14" width="0.1524" layer="91"/>
 <junction x="157.48" y="231.14"/>
 <pinref part="SUPPLY8" gate="G$1" pin="VIN"/>
@@ -13249,79 +13249,79 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 </net>
 <net name="REF" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="IN-"/>
+<pinref part="U1" gate="A" pin="IN-"/>
 <wire x1="96.52" y1="83.82" x2="91.44" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="83.82" x2="91.44" y2="91.44" width="0.1524" layer="91" grouprefs="VOLTAGE_MONITOR"/>
-<pinref part="U3" gate="A" pin="HYST"/>
+<pinref part="U1" gate="A" pin="HYST"/>
 <wire x1="91.44" y1="91.44" x2="96.52" y2="91.44" width="0.1524" layer="91"/>
 <label x="91.44" y="91.44" size="1.778" layer="95" grouprefs="VOLTAGE_MONITOR"/>
 </segment>
 <segment>
-<pinref part="U3" gate="A" pin="REF"/>
+<pinref part="U1" gate="A" pin="REF"/>
 <wire x1="132.08" y1="88.9" x2="137.16" y2="88.9" width="0.1524" layer="91" grouprefs="VOLTAGE_MONITOR"/>
 <label x="132.08" y="88.9" size="1.778" layer="95" grouprefs="VOLTAGE_MONITOR"/>
 </segment>
 </net>
 <net name="STATUS" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="OUT"/>
+<pinref part="U1" gate="A" pin="OUT"/>
 <wire x1="132.08" y1="91.44" x2="137.16" y2="91.44" width="0.1524" layer="91" grouprefs="VOLTAGE_MONITOR"/>
 <label x="132.08" y="91.44" size="1.778" layer="95" grouprefs="VOLTAGE_MONITOR"/>
 </segment>
 <segment>
 <wire x1="106.68" y1="162.56" x2="116.84" y2="162.56" width="0.1524" layer="91" grouprefs="LINEAR_REGULATOR"/>
 <label x="106.68" y="162.56" size="1.778" layer="95" grouprefs="LINEAR_REGULATOR"/>
-<pinref part="U6" gate="A" pin="EN"/>
+<pinref part="U3" gate="A" pin="EN"/>
 </segment>
 </net>
 <net name="D0" class="0">
 <segment>
 <label x="271.78" y="162.56" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PD0(RXD)"/>
+<pinref part="U4" gate="U1" pin="PD0(RXD)"/>
 <wire x1="271.78" y1="162.56" x2="312.42" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="UART" gate="J$1" pin="2"/>
+<pinref part="J3" gate="J$1" pin="2"/>
 <wire x1="312.42" y1="162.56" x2="312.42" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AREF" class="0">
 <segment>
-<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="226.06" y1="170.18" x2="226.06" y2="168.91" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <wire x1="215.9" y1="168.91" x2="226.06" y2="168.91" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="218.694" y="169.418" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="AREF"/>
+<pinref part="U4" gate="U1" pin="AREF"/>
 <wire x1="228.6" y1="170.18" x2="226.06" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="XTAL2" class="0">
 <segment>
-<pinref part="Y2" gate="G$1" pin="2"/>
+<pinref part="Y1" gate="G$1" pin="2"/>
 <wire x1="220.98" y1="154.94" x2="228.6" y2="154.94" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <wire x1="220.98" y1="154.94" x2="210.82" y2="154.94" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <junction x="220.98" y="154.94" grouprefs="ATMEGA328P"/>
-<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="210.82" y1="152.4" x2="210.82" y2="154.94" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <wire x1="208.28" y1="154.94" x2="210.82" y2="154.94" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <junction x="210.82" y="154.94" grouprefs="ATMEGA328P"/>
 <label x="218.44" y="154.94" size="1.778" layer="95" rot="MR180" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PB7(XTAL2/TOSC2)"/>
+<pinref part="U4" gate="U1" pin="PB7(XTAL2/TOSC2)"/>
 </segment>
 </net>
 <net name="D8" class="0">
 <segment>
 <wire x1="289.56" y1="139.7" x2="271.78" y2="139.7" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="275.336" y="139.7" size="1.778" layer="95" rot="MR0" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PB0(ICP)"/>
+<pinref part="U4" gate="U1" pin="PB0(ICP)"/>
 </segment>
 </net>
 <net name="CE" class="0">
 <segment>
 <wire x1="289.56" y1="137.16" x2="271.78" y2="137.16" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="275.336" y="137.16" size="1.778" layer="95" rot="MR0" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PB1(OC1A)"/>
+<pinref part="U4" gate="U1" pin="PB1(OC1A)"/>
 </segment>
 <segment>
-<pinref part="NRF_CONN" gate="G$1" pin="3"/>
+<pinref part="J4" gate="G$1" pin="3"/>
 <wire x1="342.9" y1="170.18" x2="337.82" y2="170.18" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="337.82" y="170.18" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
 </segment>
@@ -13330,17 +13330,17 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <segment>
 <wire x1="289.56" y1="134.62" x2="271.78" y2="134.62" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="277.368" y="134.62" size="1.778" layer="95" rot="MR0" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PB2(SS/OC1B)"/>
+<pinref part="U4" gate="U1" pin="PB2(SS/OC1B)"/>
 </segment>
 <segment>
-<pinref part="NRF_CONN" gate="G$1" pin="4"/>
+<pinref part="J4" gate="G$1" pin="4"/>
 <wire x1="358.14" y1="170.18" x2="363.22" y2="170.18" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="358.14" y="170.18" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
 </segment>
 </net>
 <net name="XTAL1" class="0">
 <segment>
-<pinref part="Y2" gate="G$1" pin="1"/>
+<pinref part="Y1" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="160.02" x2="228.6" y2="160.02" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <wire x1="220.98" y1="160.02" x2="210.82" y2="160.02" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <junction x="220.98" y="160.02" grouprefs="ATMEGA328P"/>
@@ -13348,18 +13348,18 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <wire x1="210.82" y1="160.02" x2="208.28" y2="160.02" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <wire x1="210.82" y1="160.02" x2="210.82" y2="158.75" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <wire x1="210.82" y1="158.75" x2="200.66" y2="158.75" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
-<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="200.66" y1="158.75" x2="200.66" y2="152.4" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="218.44" y="160.02" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PB6(XTAL1/TOSC1)"/>
+<pinref part="U4" gate="U1" pin="PB6(XTAL1/TOSC1)"/>
 </segment>
 </net>
 <net name="D1" class="0">
 <segment>
 <label x="271.78" y="160.02" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PD1(TXD)"/>
+<pinref part="U4" gate="U1" pin="PD1(TXD)"/>
 <wire x1="271.78" y1="160.02" x2="309.88" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="UART" gate="J$1" pin="3"/>
+<pinref part="J3" gate="J$1" pin="3"/>
 <wire x1="309.88" y1="160.02" x2="309.88" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -13367,67 +13367,67 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <segment>
 <wire x1="271.78" y1="157.48" x2="297.18" y2="157.48" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="271.78" y="157.48" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PD2(INT0)"/>
-<pinref part="TRIGGER" gate="-2" pin="S"/>
+<pinref part="U4" gate="U1" pin="PD2(INT0)"/>
+<pinref part="X3" gate="-2" pin="S"/>
 </segment>
 </net>
 <net name="D3" class="0">
 <segment>
 <wire x1="271.78" y1="154.94" x2="289.56" y2="154.94" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="271.78" y="154.94" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PD3(INT1)"/>
+<pinref part="U4" gate="U1" pin="PD3(INT1)"/>
 </segment>
 </net>
 <net name="D4" class="0">
 <segment>
 <wire x1="271.78" y1="152.4" x2="289.56" y2="152.4" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="271.78" y="152.4" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PD4(XCK/T0)"/>
+<pinref part="U4" gate="U1" pin="PD4(XCK/T0)"/>
 </segment>
 </net>
 <net name="D5" class="0">
 <segment>
 <wire x1="271.78" y1="149.86" x2="289.56" y2="149.86" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="271.78" y="149.86" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PD5(T1)"/>
+<pinref part="U4" gate="U1" pin="PD5(T1)"/>
 </segment>
 </net>
 <net name="D6" class="0">
 <segment>
 <wire x1="271.78" y1="147.32" x2="289.56" y2="147.32" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="271.78" y="147.32" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PD6(AIN0)"/>
+<pinref part="U4" gate="U1" pin="PD6(AIN0)"/>
 </segment>
 </net>
 <net name="D7" class="0">
 <segment>
 <wire x1="271.78" y1="144.78" x2="289.56" y2="144.78" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="271.78" y="144.78" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PD7(AIN1)"/>
+<pinref part="U4" gate="U1" pin="PD7(AIN1)"/>
 </segment>
 </net>
 <net name="A0" class="0">
 <segment>
 <wire x1="271.78" y1="185.42" x2="290.322" y2="185.42" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="272.542" y="185.42" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PC0(ADC0)"/>
+<pinref part="U4" gate="U1" pin="PC0(ADC0)"/>
 </segment>
 </net>
 <net name="A1" class="0">
 <segment>
 <wire x1="271.78" y1="182.88" x2="290.322" y2="182.88" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="272.542" y="182.88" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PC1(ADC1)"/>
+<pinref part="U4" gate="U1" pin="PC1(ADC1)"/>
 </segment>
 </net>
 <net name="A2" class="0">
 <segment>
 <wire x1="271.78" y1="180.34" x2="314.96" y2="180.34" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="272.542" y="180.34" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PC2(ADC2)"/>
+<pinref part="U4" gate="U1" pin="PC2(ADC2)"/>
 <wire x1="314.96" y1="180.34" x2="314.96" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="314.96" y1="177.8" x2="320.04" y2="177.8" width="0.1524" layer="91"/>
 <junction x="320.04" y="177.8"/>
 </segment>
@@ -13436,8 +13436,8 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <segment>
 <wire x1="271.78" y1="177.8" x2="289.56" y2="177.8" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="272.542" y="177.8" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PC3(ADC3)"/>
-<pinref part="HALL" gate="-2" pin="S"/>
+<pinref part="U4" gate="U1" pin="PC3(ADC3)"/>
+<pinref part="X4" gate="-2" pin="S"/>
 <wire x1="289.56" y1="177.8" x2="290.322" y2="177.8" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <wire x1="299.72" y1="175.26" x2="299.72" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="177.8" x2="290.322" y2="177.8" width="0.1524" layer="91"/>
@@ -13447,10 +13447,10 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <segment>
 <wire x1="271.78" y1="175.26" x2="290.322" y2="175.26" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="272.542" y="175.26" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PC4(ADC4/SDA)"/>
+<pinref part="U4" gate="U1" pin="PC4(ADC4/SDA)"/>
 </segment>
 <segment>
-<pinref part="OLED_CONN" gate="-4" pin="S"/>
+<pinref part="X1" gate="-4" pin="S"/>
 <wire x1="66.04" y1="127" x2="60.96" y2="127" width="0.1524" layer="91"/>
 <label x="54.356" y="126.238" size="1.778" layer="95"/>
 </segment>
@@ -13459,23 +13459,23 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <segment>
 <wire x1="271.78" y1="172.72" x2="290.322" y2="172.72" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="272.542" y="172.72" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
-<pinref part="U2" gate="U1" pin="PC5(ADC5/SCL)"/>
+<pinref part="U4" gate="U1" pin="PC5(ADC5/SCL)"/>
 </segment>
 <segment>
-<pinref part="OLED_CONN" gate="-3" pin="S"/>
+<pinref part="X1" gate="-3" pin="S"/>
 <wire x1="66.04" y1="129.54" x2="60.96" y2="129.54" width="0.1524" layer="91"/>
 <label x="55.118" y="128.778" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RST" class="0">
 <segment>
-<pinref part="PROG_CONN" gate="G$1" pin="5"/>
+<pinref part="J5" gate="G$1" pin="5"/>
 <wire x1="342.9" y1="137.16" x2="337.82" y2="137.16" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="337.82" y="137.16" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="U2" gate="U1" pin="PC6(/RESET)"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="U4" gate="U1" pin="PC6(/RESET)"/>
 <wire x1="228.6" y1="185.42" x2="226.06" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="185.42" x2="226.06" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="187.96" x2="218.44" y2="187.96" width="0.1524" layer="91"/>
@@ -13484,7 +13484,7 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="IN+"/>
+<pinref part="U1" gate="A" pin="IN+"/>
 <wire x1="96.52" y1="86.36" x2="88.9" y2="86.36" width="0.1524" layer="91" grouprefs="VOLTAGE_MONITOR"/>
 <pinref part="VR1" gate="G$1" pin="WIPER"/>
 <wire x1="90.424" y1="77.47" x2="91.44" y2="77.47" width="0.1524" layer="91"/>
@@ -13495,54 +13495,54 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="PROG"/>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="IC1" gate="G$1" pin="PROG"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="269.24" y1="96.52" x2="274.32" y2="96.52" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="U4" gate="G$1" pin="STAT"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="IC1" gate="G$1" pin="STAT"/>
 <wire x1="231.14" y1="91.44" x2="241.3" y2="91.44" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="218.44" y1="91.44" x2="220.98" y2="91.44" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
-<pinref part="LED_EXT" gate="-1" pin="S"/>
+<pinref part="X2" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U2" gate="U1" pin="ADC6"/>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="U4" gate="U1" pin="ADC6"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="U2" gate="U1" pin="ADC7"/>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="U4" gate="U1" pin="ADC7"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U6" gate="A" pin="BYP"/>
-<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="U3" gate="A" pin="BYP"/>
+<pinref part="C2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="U5" gate="A" pin="STAT"/>
+<pinref part="U2" gate="A" pin="STAT"/>
 <wire x1="144.78" y1="218.44" x2="165.1" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="218.44" x2="165.1" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="U5" gate="A" pin="GATE"/>
+<pinref part="U2" gate="A" pin="GATE"/>
 <wire x1="144.78" y1="220.98" x2="154.94" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="1" pin="G"/>
 <wire x1="154.94" y1="220.98" x2="154.94" y2="226.06" width="0.1524" layer="91"/>
@@ -13550,11 +13550,11 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="CONN_BAT" gate="G$1" pin="1"/>
+<pinref part="CN1" gate="G$1" pin="1"/>
 <wire x1="289.56" y1="93.98" x2="294.64" y2="93.98" width="0.1524" layer="91" grouprefs="LIPO_CHARGING"/>
 <wire x1="289.56" y1="93.98" x2="289.56" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="289.56" y1="99.06" x2="299.72" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="MASTER_SW" gate="J$1" pin="2"/>
+<pinref part="J2" gate="J$1" pin="2"/>
 <wire x1="299.72" y1="99.06" x2="299.72" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>

@@ -12632,6 +12632,10 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <part name="UART" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
 <part name="GND21" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="VR1" library="3296W-1-502" deviceset="3296W-1-502" device=""/>
+<part name="X5" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-02-PIN" device="-ROUND-PAD"/>
+<part name="X6" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-02-PIN" device="-ROUND-PAD"/>
+<part name="GND22" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND23" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12907,6 +12911,26 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <attribute name="NAME" x="95.5182" y="72.382890625" size="1.784990625" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="80.251409375" y="72.377409375" size="1.7824" layer="96" rot="MR90"/>
 </instance>
+<instance part="X5" gate="-2" x="304.8" y="127" smashed="yes">
+<attribute name="NAME" x="307.34" y="126.238" size="1.524" layer="95"/>
+</instance>
+<instance part="X5" gate="-1" x="304.8" y="129.54" smashed="yes">
+<attribute name="NAME" x="307.34" y="128.778" size="1.524" layer="95"/>
+<attribute name="VALUE" x="304.038" y="130.937" size="1.778" layer="96"/>
+</instance>
+<instance part="X6" gate="-2" x="342.9" y="121.92" smashed="yes">
+<attribute name="NAME" x="345.44" y="121.158" size="1.524" layer="95"/>
+</instance>
+<instance part="X6" gate="-1" x="340.36" y="124.46" smashed="yes">
+<attribute name="NAME" x="342.9" y="123.698" size="1.524" layer="95"/>
+<attribute name="VALUE" x="339.598" y="125.857" size="1.778" layer="96"/>
+</instance>
+<instance part="GND22" gate="1" x="299.72" y="129.54" smashed="yes" rot="R270">
+<attribute name="VALUE" x="299.466" y="129.54" size="1.778" layer="96" rot="R270" align="top-center"/>
+</instance>
+<instance part="GND23" gate="1" x="335.28" y="124.46" smashed="yes" rot="R270">
+<attribute name="VALUE" x="335.026" y="124.46" size="1.778" layer="96" rot="R270" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -13051,6 +13075,14 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <wire x1="314.96" y1="152.4" x2="327.66" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 <wire x1="327.66" y1="152.4" x2="327.66" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X5" gate="-1" pin="S"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="X6" gate="-1" pin="S"/>
+<pinref part="GND23" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="V_BATT" class="0">
@@ -13377,12 +13409,22 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <label x="271.78" y="154.94" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
 <pinref part="U4" gate="U1" pin="PD3(INT1)"/>
 </segment>
+<segment>
+<pinref part="X5" gate="-2" pin="S"/>
+<wire x1="302.26" y1="127" x2="299.72" y2="127" width="0.1524" layer="91"/>
+<label x="299.72" y="124.46" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D4" class="0">
 <segment>
 <wire x1="271.78" y1="152.4" x2="289.56" y2="152.4" width="0.1524" layer="91" grouprefs="ATMEGA328P"/>
 <label x="271.78" y="152.4" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
 <pinref part="U4" gate="U1" pin="PD4(XCK/T0)"/>
+</segment>
+<segment>
+<pinref part="X6" gate="-2" pin="S"/>
+<wire x1="340.36" y1="121.92" x2="335.28" y2="121.92" width="0.1524" layer="91"/>
+<label x="332.74" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D5" class="0">
