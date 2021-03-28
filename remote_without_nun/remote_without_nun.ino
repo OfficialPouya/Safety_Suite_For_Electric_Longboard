@@ -1,9 +1,6 @@
- 
-#include <Wire.h>
 #include <SPI.h>
-#include <EEPROM.h>
 #include "RF24.h"
-
+#include <nRF24L01.h>
 
 // Defining struct to hold stats 
 struct board_data {
@@ -77,32 +74,32 @@ void transmit_to_board(){
     // Transmit the speed value (0-1024).
     sendSuccess = radio.write(&throttle, sizeof(throttle));
     
-    // Listen for an acknowledgement reponse (return of VESC data).
-    while (radio.isAckPayloadAvailable()) {
-        radio.read(&data, sizeof(data));
-//        Serial.println(data.battery_val);
-    }
-        if (sendSuccess == true){
-            // Transmission was a succes
-            failCount = 0;
-            sendSuccess = false;
-             Serial.println("Transmission Success");
-             digitalWrite(speaker, LOW);
-        }
+//     // Listen for an acknowledgement reponse (return of VESC data).
+//     while (radio.isAckPayloadAvailable()) {
+//         radio.read(&data, sizeof(data));
+// //        Serial.println(data.battery_val);
+//     }
+//         if (sendSuccess == true){
+//             // Transmission was a succes
+//             failCount = 0;
+//             sendSuccess = false;
+//              Serial.println("Transmission Success");
+//              digitalWrite(speaker, LOW);
+//         }
 
-        else {
-            // Transmission was not a succes
-            ++failCount;
-            Serial.println("Transmission Failed");
-            digitalWrite(speaker, HIGH);
-        }
+//         else {
+//             // Transmission was not a succes
+//             ++failCount;
+//             Serial.println("Transmission Failed");
+//             digitalWrite(speaker, HIGH);
+//         }
 
-        // If lost more than 5 transmissions, we can assume that connection is lost.
-        if (failCount < 5) {
-            connected = true;
-        } 
-        else {
-            connected = false;
-        }
+//         // If lost more than 5 transmissions, we can assume that connection is lost.
+//         if (failCount < 10) {
+//             connected = true;
+//         } 
+//         else {
+//             connected = false;
+//         }
     }
 }

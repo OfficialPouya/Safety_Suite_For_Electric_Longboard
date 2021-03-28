@@ -49,7 +49,7 @@ void loop() {
   // If transmission is available
   if (radio.available()){
     // The next time a transmission is received on pipe, the data in gotByte will be sent back in the acknowledgement (this could later be changed to data from VESC!)
-    radio.writeAckPayload(pipe, &data, sizeof(data));
+    // radio.writeAckPayload(pipe, &data, sizeof(data));
 
     // Read the actual message
     radio.read(&motorSpeed, sizeof(motorSpeed));
