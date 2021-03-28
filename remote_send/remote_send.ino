@@ -55,7 +55,7 @@ void loop() {
   }
   delay(200);
   boolean success = nchuk.update();
-  if (!success) {  // Ruh roh
+  if (!success) {
     Serial.println("Controller disconnected!");
     delay(1000);
   }

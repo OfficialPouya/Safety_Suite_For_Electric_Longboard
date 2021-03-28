@@ -50,10 +50,10 @@ void loop() {
       if (button_state == LOW){code_to_send = 1;}
       else{code_to_send = 0;}
   
-      dataTransmit.error_code = code_to_send  ;
-      Serial.println("Sent ");
-      Serial.println(dataTransmit.error_code);
-      Serial.print("\n");
+//      dataTransmit.error_code = code_to_send  ;
+//      Serial.println("Sent ");
+//      Serial.println(dataTransmit.error_code);
+//      Serial.print("\n");
       myRadio.openWritingPipe(addresses[0]);
       myRadio.write(&dataTransmit, sizeof(dataTransmit));
       myRadio.openReadingPipe(1, addresses[0]);
