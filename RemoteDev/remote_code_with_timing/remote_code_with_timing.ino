@@ -17,8 +17,8 @@ typedef struct package Package;
 Package dataRecieve;
 Package dataTransmit;
 
-int button_pin = 2;
-int led_pin = 3;
+int button_pin = 5;
+int led_pin = 2;
 
 void setup() {
   Serial.begin(115200); 
