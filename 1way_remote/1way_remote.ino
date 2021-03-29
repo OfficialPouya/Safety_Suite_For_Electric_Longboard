@@ -19,8 +19,8 @@ unsigned long lastTransmission;
 
 byte dead_man_pin = 5;
 byte red_led = 2;
-byte yellow_led = 2;
-byte green_led = 2;
+byte yellow_led = 3;
+byte green_led = 4;
 int throttle = A1;
 char str[11]; 
 U8G2_SSD1306_128X32_UNIVISION_F_HW_I2C u8g2(U8G2_R0);
@@ -55,17 +55,28 @@ void loop() {
 
 void transmit_to_board(){
     // Transmit once every 50 millisecond
-    if (millis() - lastTransmission >= 50) {
+    if (millis() - lastTransmission >= 500) {
         lastTransmission = millis();
-        boolean sendSuccess = false;
+        digitalWrite(yellow_led, LOW);
+        digitalWrite(red_led, LOW);
+        digitalWrite(green_led, HIGH);
         // Transmit the speed value (0-1024).
+        Serial.print(throttle);
         myRadio.write(&throttle, sizeof(throttle));
+    }
+    else{
+        digitalWrite(yellow_led, LOW);
+        digitalWrite(red_led, HIGH);
+        digitalWrite(green_led, LOW);  
     }
 }
 
 void update_screen(){
+    digitalWrite(yellow_led, HIGH);
+    digitalWrite(red_led, LOW);
+    digitalWrite(green_led, LOW);
     u8g2.clearBuffer();          // clear the internal memory
     u8g2.setFont(u8g2_font_ncenB08_tr); // choose a suitable font
-    u8g2.drawStr(0,10, throttle);      // write speed value
+    u8g2.drawStr(0,10, "test");      // write speed value
     u8g2.sendBuffer();          // transfer internal memory to the display
 }
