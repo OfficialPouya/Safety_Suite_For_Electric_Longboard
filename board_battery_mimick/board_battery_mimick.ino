@@ -28,7 +28,7 @@ struct board_data data;
 unsigned long lastDataCheck;
 
 void setup() {
-    Serial.begin(115200);
+   Serial.begin(115200);
 
     radio.begin();
     radio.enableAckPayload();
@@ -49,10 +49,11 @@ void loop() {
   // If transmission is available
   if (radio.available()){
     // The next time a transmission is received on pipe, the data in gotByte will be sent back in the acknowledgement (this could later be changed to data from VESC!)
-    // radio.writeAckPayload(pipe, &data, sizeof(data));
+//    radio.writeAckPayload(pipe, &data, sizeof(data));
 
     // Read the actual message
     radio.read(&motorSpeed, sizeof(motorSpeed));
+    Serial.println(motorSpeed);
     recievedData = true;
   }
 
