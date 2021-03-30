@@ -7,10 +7,10 @@ byte addresses[][6] = {"0"};
 
 
 
-byte red_led = 5;
-byte yellow_led = 6;
-byte green_led = 4;
-byte button_pin = 2;
+byte red_led = 6;
+byte yellow_led = 5;
+byte green_led = 3;
+byte button_pin = 4;
 
 int throttle;
 
