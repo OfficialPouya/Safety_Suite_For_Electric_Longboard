@@ -45,6 +45,7 @@ void setup() {
     pinMode(red_led, OUTPUT);
     pinMode(yellow_led, OUTPUT);
     pinMode(green_led, OUTPUT);
+    pinMode(speaker, OUTPUT);
     pinMode(dead_man_pin, INPUT_PULLUP);
     myRadio.begin();  
     myRadio.setPALevel(RF24_PA_MAX);
@@ -109,7 +110,7 @@ void transmit_to_board(){
 }
 
 void read_board_data(){
-    if(data.slip == 1){
+    if(data.slip == 0){
         digitalWrite(speaker, HIGH);
     }
     else{
