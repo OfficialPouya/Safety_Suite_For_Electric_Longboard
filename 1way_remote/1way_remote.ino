@@ -43,7 +43,7 @@ void setup() {
 
 void loop() {
     // read the value of POT
-    throttle = analogRead(A1);
+    throttle = analogRead(A3);
     // If dead man is triggered send value of POT, otherwise send
     // 512 (the middle val of potentiometer)
     if (digitalRead(dead_man_pin) == 0){
