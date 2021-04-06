@@ -12629,7 +12629,7 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <part name="GND19" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="X4" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-02-PIN" device="-ROUND-PAD"/>
 <part name="GND20" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="J3" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
+<part name="UART" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
 <part name="GND21" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="VR1" library="3296W-1-502" deviceset="3296W-1-502" device=""/>
 </parts>
@@ -12896,7 +12896,7 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <instance part="GND20" gate="1" x="299.72" y="170.18" smashed="yes">
 <attribute name="VALUE" x="299.72" y="169.926" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="J3" gate="J$1" x="312.42" y="142.24" smashed="yes" rot="R90">
+<instance part="UART" gate="J$1" x="312.42" y="142.24" smashed="yes" rot="R90">
 <attribute name="VALUE" x="322.326" y="132.08" size="1.778" layer="96" font="vector" rot="R90"/>
 <attribute name="NAME" x="306.832" y="139.7" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
@@ -13046,7 +13046,7 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <wire x1="297.18" y1="154.94" x2="297.18" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J3" gate="J$1" pin="1"/>
+<pinref part="UART" gate="J$1" pin="1"/>
 <wire x1="314.96" y1="149.86" x2="314.96" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="152.4" x2="327.66" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
@@ -13279,7 +13279,7 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <label x="271.78" y="162.56" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
 <pinref part="U4" gate="U1" pin="PD0(RXD)"/>
 <wire x1="271.78" y1="162.56" x2="312.42" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="J3" gate="J$1" pin="2"/>
+<pinref part="UART" gate="J$1" pin="2"/>
 <wire x1="312.42" y1="162.56" x2="312.42" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -13359,7 +13359,7 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <label x="271.78" y="160.02" size="1.778" layer="95" grouprefs="ATMEGA328P"/>
 <pinref part="U4" gate="U1" pin="PD1(TXD)"/>
 <wire x1="271.78" y1="160.02" x2="309.88" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="J3" gate="J$1" pin="3"/>
+<pinref part="UART" gate="J$1" pin="3"/>
 <wire x1="309.88" y1="160.02" x2="309.88" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
