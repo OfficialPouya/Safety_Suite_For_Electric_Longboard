@@ -2469,7 +2469,7 @@ design rules under a new name.</description>
 <contactref element="VR1" pad="3"/>
 <contactref element="X5" pad="1"/>
 <contactref element="X6" pad="1"/>
-<polygon width="0.254" layer="1">
+<polygon width="0.254" layer="1" isolate="0.254">
 <vertex x="-58.42" y="53.34"/>
 <vertex x="-24.13" y="52.07"/>
 <vertex x="-22.86" y="50.8"/>
