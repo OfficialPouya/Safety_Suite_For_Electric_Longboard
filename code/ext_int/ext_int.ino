@@ -1,10 +1,21 @@
+#include <U8g2lib.h>
+bool trigger;
+#define NUM_READINGS 1
+#ifdef U8X8_HAVE_HW_SPI
+#include <SPI.h>
+#endif
+#ifdef U8X8_HAVE_HW_I2C
+#include <Wire.h>
+#endif
+U8G2_SSD1306_128X32_UNIVISION_F_HW_I2C u8g2(U8G2_R0);
+
 int speedhall= 3;
 int rothall= 4;
 int i=0;
 unsigned long old_time;
 unsigned long new_time;
 bool flag=false;
-unsigned long delta_time_arr [12];
+unsigned long delta_time_arr [NUM_READINGS];
 unsigned long delta_time;
 bool rot_dir;
 double current_RPM=0;
@@ -23,6 +34,7 @@ double average(unsigned long delta_time_arr [], int len){
   return(double(sum/double(len)));
 }
 void setup() {
+  u8g2.begin();
   // put your setup code here, to run once:
 Serial.begin(9600);
 pinMode(speedhall, INPUT_PULLUP);
@@ -47,35 +59,57 @@ sei();//allow interrupts
 int multiplier;
 ISR(TIMER1_COMPA_vect){//timer1 interrupt 1Hz toggles pin 13
 //generates pulse wave of frequency 20hz (takes two cycles for full wave- toggle high then toggle low)
-  flag=false;
-  multiplier=(rot_dir)?1:-1;
-  //if(has_zero(delta_time_arr,6)) current_RPM=0;
-  current_RPM=60.0/(3*(average(delta_time_arr,12))/1000000.0);
+  flag=true;
+ if(micros()-new_time>1000000){
+    current_RPM=60.0/(6*(average(delta_time_arr,NUM_READINGS))/1000000.0);
+  }
+  else
+  {
+  current_RPM=0;
+  }
+  trigger=false;
 }
 
 //first few readings
 
 void RPM_update(){
   //Serial.println("Hello");
-  flag=true;
+  flag=false;
+  //trigger=true;
   new_time=micros();
   rot_dir= (digitalRead(rothall));
  delta_time=new_time-old_time;
  delta_time_arr[i]=delta_time;
  old_time=new_time;
-  i=(i++)%10;
+  i=(i++)%NUM_READINGS;
    //Serial.print("Hello");
   
   //flag=true;
 }
+
 void loop() {
   //Serial.println(digitalRead(speedhall));
   // put your main code here, to run repeatedly:
   //Serial.println(digitalRead(rothall));
   if(flag){
    // if(delta_time<200000){Serial.println(delta_time);}
-    if(current_RPM<100000){Serial.println(current_RPM);}
-    {Serial.println(rot_dir);}
+    if(current_RPM<100000)
+    {u8g2.clearBuffer();          // clear the internal memory
+    u8g2.setFont(u8g2_font_ncenB08_tr); // choose a suitable font
+    u8g2.setCursor(0,12);
+    u8g2.print("RPM: ");
+    u8g2.print(current_RPM);
+    u8g2.setCursor(0,24);
+    if(rot_dir){
+      u8g2.print("Forward");
+    }
+    else{
+       u8g2.print("Reverse");
+    }
+   
+    u8g2.sendBuffer();
+    }
+   
      
     //Serial.println(current_RPM);
     //Serial.println(rot_dir);
