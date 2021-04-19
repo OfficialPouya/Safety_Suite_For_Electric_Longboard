@@ -10,9 +10,9 @@ SSD1306AsciiAvrI2c oled;
 void setup() {
 
 #if RST_PIN >= 0
-  oled.begin(&Adafruit128x64, I2C_ADDRESS, RST_PIN);
+  oled.begin(&Adafruit128x32, I2C_ADDRESS, RST_PIN);
 #else // RST_PIN >= 0
-  oled.begin(&Adafruit128x64, I2C_ADDRESS);
+  oled.begin(&Adafruit128x32, I2C_ADDRESS);
 #endif // RST_PIN >= 0
   // Call oled.setI2cClock(frequency) to change from the default frequency.
   
@@ -22,8 +22,21 @@ void setup() {
 }
 
 void loop() {  
-  oled.print("\n TIME Passed: ");
-  oled.print(micros());
+  double val = 420.69;
+  oled.print("Speed: ");
+  oled.println(val);
+  oled.print("Slip: ");
+  oled.print("NO");
+  oled.print("   EJ: ");
+  oled.println("NO");
+  oled.print("FL: ");
+  oled.print(3000);
+  oled.print("   FR: ");
+  oled.println(3000);
+  oled.print("BL: ");
+  oled.print(3000);
+  oled.print("   BR: ");
+  oled.println(3000);
   delay(1000);
   oled.clear();
 }

@@ -4,48 +4,47 @@
 unsigned long timer;
 
 RF24 myRadio (9, 10);
-const uint64_t pipe = 0xE8E8F0F0E1LL;
+const uint64_t pipe[1]= {0xF0F0F0F0E1LL};
 
 struct boardData {
     int batteryLevel; 
-    int slip;
+    byte slip;
 };
 
 struct boardData data;
 
 bool recievedData = false;
-bool flag = false; 
-
 uint32_t lastTimeReceived = 0;
 
 byte red_led = 6;
-byte yellow_led = 7;
-byte green_led = 8;
+byte yellow_led = 5;
+byte green_led = 3;
 byte button_pin = 4;
-int bat_pot = A3; 
+int bat_pot = A2; 
 int throttle;
 
 void setup() {
-    Serial.begin(115200); 
+    Serial.begin(9600); 
+    delay(100);
     pinMode(red_led, OUTPUT);
     pinMode(yellow_led, OUTPUT);
     pinMode(green_led, OUTPUT);
     pinMode(button_pin, INPUT_PULLUP);
-    delay(1000);
-
-    myRadio.begin();  
+    delay(100);
+    myRadio.begin(); 
+    delay(100); 
+    myRadio.setAutoAck(true); 
     myRadio.enableAckPayload();
     myRadio.enableDynamicPayloads();
-    myRadio.openReadingPipe(1, pipe);
+    myRadio.openReadingPipe(1, pipe[0]);
     myRadio.startListening();
+    myRadio.setRetries(15,15);
 }
 
 void loop() {
-    flag = false; 
     read_board_values();
     get_data_remote();
     update_leds();
-    if(flag){Serial.println(throttle);}
 }
 
 void read_board_values(){
@@ -55,7 +54,6 @@ void read_board_values(){
     else{
         data.slip = 0;
     }
-//    Serial.println(data.slip);
     data.batteryLevel = analogRead(bat_pot);
 }
 
@@ -63,7 +61,8 @@ void get_data_remote(){
     if (myRadio.available()){
             myRadio.writeAckPayload(pipe, &data, sizeof(data));
             myRadio.read(&throttle, sizeof(throttle) );
-            flag = true; 
+            Serial.print("Speed: ");
+            Serial.println(throttle);
     }
 }
 
@@ -85,4 +84,7 @@ void update_leds(){
         digitalWrite(yellow_led, LOW);
         digitalWrite(red_led, LOW);
     }
+
+    Serial.println(data.slip);
+    Serial.println(data.batteryLevel);
 }
