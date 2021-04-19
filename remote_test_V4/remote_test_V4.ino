@@ -17,6 +17,7 @@ const uint64_t pipe[1] = {0xF0F0F0F0E1LL};
 int throttle = 0;
 byte buzzer_flag = 0;
 unsigned long lastTransmission;
+unsigned long lastCheck; 
 unsigned long buzzer_trigger_time;
 
 byte dead_man_pin = 3;
@@ -59,6 +60,7 @@ void setup(){
   read_remote_vals();
   send_data_to_board();
   display_data();
+  send_data_to_monitor();
 }
 
 
@@ -77,7 +79,7 @@ void read_remote_vals(){
 
 
 void send_data_to_board(){
-  if (millis() - lastTransmission >= 100) {
+  if (millis() - lastTransmission >= 50) {
     if(radio.write(&throttle,sizeof(throttle))){
       lastTransmission = millis();
       if(radio.isAckPayloadAvailable()){
@@ -103,22 +105,19 @@ void send_data_to_board(){
 }
 
 
+void send_data_to_monitor(){
+  if(millis()-lastCheck >= 50){
+    radio.openWritingPipe(pipe[2]);
+    if(radio.write(&data,sizeof(data))){
+      lastCheck = millis();
+    }
+    radio.stopListening();
+    radio.openWritingPipe(pipe[0]);
+  }
+} 
+
 
 void display_data(){
-//    Serial.print("Sent: ");
-//    Serial.println(throttle);
-//    Serial.print("FL: ");
-//    Serial.println(data.fl);
-//    Serial.print("FR: ");
-//    Serial.println(data.fr);
-//    Serial.print("RL: ");
-//    Serial.println(data.rl);
-//    Serial.print("RR: ");
-//    Serial.println(data.rr);
-//    Serial.print("SLIP: ");
-//    Serial.println(data.slip);
-//    Serial.print("Eject: ");
-//    Serial.println(data.eject);
     u8g2.clearBuffer();          // clear the internal memory
     u8g2.setFont(u8g2_font_micro_tr); // choose a suitable font
     u8g2.setCursor(0,8);

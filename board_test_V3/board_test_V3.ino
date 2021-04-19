@@ -86,5 +86,5 @@ void read_remote_send_board(){
 
 void print_data(){
     Serial.print("Throttle: ");
-    Serial.println(throttle);  
+    Serial.println(throttle); 
 }
