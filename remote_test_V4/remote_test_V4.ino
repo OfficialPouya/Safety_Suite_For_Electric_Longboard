@@ -85,7 +85,6 @@ void send_data_to_board(){
       if(radio.isAckPayloadAvailable()){
         radio.read(&data,sizeof(data));
       }
-    throttle = throttle + 1;
     }  
   }
 

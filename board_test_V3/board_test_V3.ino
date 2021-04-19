@@ -20,6 +20,7 @@ struct boardData{
   byte slip;
   byte eject;
 };
+
 struct boardData data;
 
 
@@ -43,12 +44,6 @@ void loop(){
   read_board_vals();
   read_remote_send_board();
   print_data();
-  
-
-
-
-
-
 }
 
 void read_board_vals(){
