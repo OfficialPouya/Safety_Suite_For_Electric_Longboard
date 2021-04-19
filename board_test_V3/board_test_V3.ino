@@ -8,8 +8,9 @@ RF24 radio(9,10);
 int pot_pin = A3;
 byte slip_pin = 4;
 byte eject_pin = 3;
-
+byte buzzer_pin = 2;
 int throttle; 
+unsigned long lastMsg;
 
 struct boardData{
   long fl;
@@ -35,6 +36,7 @@ void setup(){
 
   pinMode(slip_pin, INPUT_PULLUP);
   pinMode(eject_pin, INPUT_PULLUP);
+  pinMode(buzzer_pin, OUTPUT);
 }
 
 void loop(){
@@ -71,10 +73,15 @@ void read_board_vals(){
 }
 
 void read_remote_send_board(){
-    if ( radio.available() ) {
+    if (radio.available()){
     radio.writeAckPayload( 1, &data, sizeof(data) );
     radio.read( &throttle,sizeof(throttle) );
+    lastMsg = millis();
     }
+
+    if(millis() - lastMsg > 1000){tone(buzzer_pin, 10);} 
+    else{noTone(buzzer_pin);}
+    
 }
 
 void print_data(){
