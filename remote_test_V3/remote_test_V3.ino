@@ -92,11 +92,11 @@ void send_data_to_board(){
     buzzer_trigger_time = millis();
   }
 
-  if(buzzer_flag == 1 && millis() - buzzer_trigger_time < 1000){
+  if(buzzer_flag == 1 && millis() - buzzer_trigger_time < 200){
     tone(buzzer_pin, 1000);
   }
 
-  else if (buzzer_flag == 1 && millis() - buzzer_trigger_time > 1000){
+  else if (buzzer_flag == 1 && millis() - buzzer_trigger_time > 200){
     noTone(buzzer_pin);
     buzzer_flag = 0;
   }
