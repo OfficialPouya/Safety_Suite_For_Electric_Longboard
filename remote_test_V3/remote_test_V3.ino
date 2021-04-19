@@ -100,14 +100,6 @@ void send_data_to_board(){
     noTone(buzzer_pin);
     buzzer_flag = 0;
   }
-
-  
-//  if(millis() - lastTransmission >=1000){
-//    tone(buzzer_pin, 1000);
-//  }
-//  else if((millis() - lastTransmission < 1000)){
-//    noTone(buzzer_pin);  
-//  }
 }
 
 
