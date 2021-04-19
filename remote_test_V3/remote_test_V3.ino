@@ -15,9 +15,12 @@ RF24 radio(9,10);
 const uint64_t pipe[1] = {0xF0F0F0F0E1LL};
 
 int throttle = 0;
+byte buzzer_flag = 0;
 unsigned long lastTransmission;
+unsigned long buzzer_trigger_time;
 
 byte dead_man_pin = 4;
+byte buzzer_pin = 3;
 int throttle_pin = A3;
 
 
@@ -49,6 +52,7 @@ void setup(){
   radio.setRetries(15,15);
 
   pinMode(dead_man_pin, INPUT_PULLUP);
+  pinMode(buzzer_pin, OUTPUT);
  }
 
  void loop(){
@@ -74,14 +78,36 @@ void read_remote_vals(){
 
 void send_data_to_board(){
   if (millis() - lastTransmission >= 100) {
-    lastTransmission = millis();
     if(radio.write(&throttle,sizeof(throttle))){
+      lastTransmission = millis();
       if(radio.isAckPayloadAvailable()){
         radio.read(&data,sizeof(data));
       }
     throttle = throttle + 1;
     }  
   }
+
+  if(buzzer_flag != 1 && data.slip == 0 || data.eject == 0 || millis() - lastTransmission >=1000){
+    buzzer_flag = 1;
+    buzzer_trigger_time = millis();
+  }
+
+  if(buzzer_flag == 1 && millis() - buzzer_trigger_time < 1000){
+    tone(buzzer_pin, 1000);
+  }
+
+  else if (buzzer_flag == 1 && millis() - buzzer_trigger_time > 1000){
+    noTone(buzzer_pin);
+    buzzer_flag = 0;
+  }
+
+  
+//  if(millis() - lastTransmission >=1000){
+//    tone(buzzer_pin, 1000);
+//  }
+//  else if((millis() - lastTransmission < 1000)){
+//    noTone(buzzer_pin);  
+//  }
 }
 
 
