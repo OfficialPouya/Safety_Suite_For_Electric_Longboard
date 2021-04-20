@@ -24,7 +24,7 @@ byte dead_man_pin = 3;
 byte buzzer_pin = 7;
 int throttle_pin = A3;
 int throttle_mapped;
-
+int tone_val;
 
 struct boardData {
   long fl;
@@ -40,27 +40,53 @@ struct boardData data;
 U8G2_SSD1306_128X32_UNIVISION_F_HW_I2C u8g2(U8G2_R0);
 
 void setup(){
-//  Serial.begin(9600);
-  u8g2.begin();
-  radio.begin();
-  delay(100);
-  
-  radio.setAutoAck(true);
-  radio.enableAckPayload();
-  radio.enableDynamicPayloads();
-  radio.stopListening();
-  radio.openWritingPipe(pipe[0]);
-  radio.setRetries(15,15);
-
-  pinMode(dead_man_pin, INPUT_PULLUP);
-  pinMode(buzzer_pin, OUTPUT);
+  start_screen();
+  start_radio();
+  start_pins();
+  startup_audio();
  }
+
+void(* resetFunc) (void) = 0;
 
  void loop(){
   read_remote_vals();
   send_data_to_board();
   display_data();
   send_data_to_monitor();
+}
+
+
+void start_screen(){
+  u8g2.begin();
+  u8g2.setFont(u8g2_font_micro_tr); // choose a suitable font
+}
+
+void start_radio(){
+  radio.begin();
+  delay(100);
+  radio.setAutoAck(true);
+  radio.enableAckPayload();
+  radio.enableDynamicPayloads();
+  radio.stopListening();
+  radio.openWritingPipe(pipe[0]);
+  radio.setRetries(15,15);
+}
+
+void start_pins(){
+  pinMode(dead_man_pin, INPUT_PULLUP);
+  pinMode(buzzer_pin, OUTPUT);
+}
+
+void startup_audio(){
+  tone(buzzer_pin, 1000);
+  delay(100);
+  tone(buzzer_pin, 100000);
+  delay(100);
+  tone(buzzer_pin, 10);
+  delay(100);
+  tone(buzzer_pin, 1000);
+  delay(100);
+  noTone(buzzer_pin);
 }
 
 
@@ -91,13 +117,19 @@ void send_data_to_board(){
     }  
   }
 
+  if(millis()-lastTransmission > 3000){resetFunc();}
+  if(millis()-lastTransmission > 1500){start_radio();}
+  
   if(buzzer_flag != 1 && data.slip == 0 || data.eject == 0 || millis() - lastTransmission >=1000){
     buzzer_flag = 1;
     buzzer_trigger_time = millis();
   }
 
   if(buzzer_flag == 1 && millis() - buzzer_trigger_time < 200){
-    tone(buzzer_pin, 1000);
+    if(data.slip == 0){tone_val = 800;}
+    if(data.eject == 0){tone_val = 400;}
+    else{tone_val = 1000;}
+    tone(buzzer_pin, tone_val); 
   }
 
   else if (buzzer_flag == 1 && millis() - buzzer_trigger_time > 200){
@@ -105,6 +137,8 @@ void send_data_to_board(){
     buzzer_flag = 0;
   }
 }
+
+
 
 
 void send_data_to_monitor(){
@@ -121,7 +155,6 @@ void send_data_to_monitor(){
 
 void display_data(){
     u8g2.clearBuffer();          // clear the internal memory
-    u8g2.setFont(u8g2_font_micro_tr); // choose a suitable font
     u8g2.setCursor(0,8);
     u8g2.print(throttle_mapped);
     u8g2.setCursor(0,16);

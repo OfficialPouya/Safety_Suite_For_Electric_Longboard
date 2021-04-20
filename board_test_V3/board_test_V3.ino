@@ -34,7 +34,15 @@ void setup(){
   radio.openReadingPipe(1,pipe[0]);
   radio.startListening();
   radio.setRetries(15,15);
-
+  tone(buzzer_pin, 10);
+  delay(100);
+  tone(buzzer_pin, 100000);
+  delay(100);
+  tone(buzzer_pin, 1000);
+  delay(100);
+  tone(buzzer_pin, 10);
+  delay(100);
+  noTone(buzzer_pin);
   pinMode(slip_pin, INPUT_PULLUP);
   pinMode(eject_pin, INPUT_PULLUP);
   pinMode(buzzer_pin, OUTPUT);
@@ -66,6 +74,10 @@ void read_board_vals(){
     data.eject = 1;
   }
 }
+
+
+
+
 
 void read_remote_send_board(){
     if (radio.available()){
