@@ -23,7 +23,7 @@ unsigned long buzzer_trigger_time;
 byte dead_man_pin = 3;
 byte buzzer_pin = 7;
 int throttle_pin = A3;
-
+int throttle_mapped;
 
 
 struct boardData {
@@ -67,10 +67,13 @@ void setup(){
 void read_remote_vals(){
   if(digitalRead(dead_man_pin) == 0){
     throttle = analogRead(throttle_pin);
+    throttle_mapped = map(throttle, 0, 1023, 0, 255);
+    
   }
 
   else{
-    throttle = 6969;
+    throttle = 128;
+    throttle_mapped = 128;
   }
   
   
@@ -80,7 +83,7 @@ void read_remote_vals(){
 
 void send_data_to_board(){
   if (millis() - lastTransmission >= 50) {
-    if(radio.write(&throttle,sizeof(throttle))){
+    if(radio.write(&throttle_mapped,sizeof(throttle_mapped))){
       lastTransmission = millis();
       if(radio.isAckPayloadAvailable()){
         radio.read(&data,sizeof(data));
@@ -120,7 +123,7 @@ void display_data(){
     u8g2.clearBuffer();          // clear the internal memory
     u8g2.setFont(u8g2_font_micro_tr); // choose a suitable font
     u8g2.setCursor(0,8);
-    u8g2.print(throttle);
+    u8g2.print(throttle_mapped);
     u8g2.setCursor(0,16);
     u8g2.print("fl: ");
     u8g2.print(data.fl);
