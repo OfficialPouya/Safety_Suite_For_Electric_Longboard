@@ -1,0 +1,63 @@
+Partlist exported from C:/Users/Patrick/Documents/GitHub/senior_design/eagle/PCB Orders/3_18_21_Remote_DIP/pcbremote.sch at 4/3/2021 3:13 PM
+
+Part          Value         Device                Package                Description                                                                                                     
+3.3V                        PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+A0                          PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+A1                          PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+A2                          PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+A3                          PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+AREF                        PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+C2            .1u           C-USC0805             C0805                  CAPACITOR, American symbol                                                                                      
+C3            .1u           C-USC0805             C0805                  CAPACITOR, American symbol                                                                                      
+C4            22p           C-USC0805             C0805                  CAPACITOR, American symbol                                                                                      
+C5            22p           C-USC0805             C0805                  CAPACITOR, American symbol                                                                                      
+C6            .1u           C-USC0805             C0805                  CAPACITOR, American symbol                                                                                      
+C7            4.7u          C-USC0805             C0805                  CAPACITOR, American symbol                                                                                      
+C8            4.7u          C-USC0805             C0805                  CAPACITOR, American symbol                                                                                      
+C9            10u           C-USC0805             C0805                  CAPACITOR, American symbol                                                                                      
+CE                          PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+CONN_BAT      SOCKET 1x2    JST_2PIN-THM          JST-PH-2-THM           JST 2-Pin Connectors of various flavors                                                                         
+CSN                         PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+D0                          PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+D1                          PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+D2                          PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+D3                          PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+D4                          PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+D5                          PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+D6                          PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+D7                          PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+D8                          PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+EN                          PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+ENABLE_SELECT MALE 1x3      CONN_03               1X03                   Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections 
+GND                         PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+GND7                        PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+LED_EXT_CON   FEMALE 1x2    CONN_02               1X02                   Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections 
+MISO                        PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+MOSI                        PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+NRF_CONN      FEMALE 2x4    CONN_04X2             2X4                    Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections 
+PROG_CONN     FEMALE 2x3    CONN_03X2FEMALE       2X3                    Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections 
+R1            10k           R-US_R0805            R0805                  RESISTOR, American symbol                                                                                       
+R2            2.26Meg       R-US_R0805            R0805                  RESISTOR, American symbol                                                                                       
+R3            0             R-US_R0805            R0805                  RESISTOR, American symbol                                                                                       
+R4            1.18Meg       R-US_R0805            R0805                  RESISTOR, American symbol                                                                                       
+R5            2k            R-US_R0805            R0805                  RESISTOR, American symbol                                                                                       
+R6            470           R-US_R0805            R0805                  RESISTOR, American symbol                                                                                       
+RESET                       PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+SCK                         PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+SCL                         PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+SDA                         PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+STATUS                      PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+U1            TPS73233DCQR  TPS73233DCQR          SOT127P706X180-6N                                                                                                                      
+U2            ATMEGA328P-PU ATMEGA328P-PU         DIP254P762X457-28      8-bit Microcontroller with In-System Programmable Flash                                                         
+U3            LTC1540CS8PBF LTC1540CS8PBF         SO-8_S_LIT                                                                                                                             
+U4            MCP73831/OT   MCP73831/OT           SOT23-5L               MCP73831/2                                                                                                      
+USB           MICRO-USBV2   MICRO-USBV2           MICRO-USB-2            Micro USB B connector                                                                                           
+VCC                         PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+VIN                         PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+VIN_EXT                     PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+VIN_EXT_CON   FEMALE 1x2    CONN_02               1X02                   Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections 
+VIN_SELECT    MALE 1x3      CONN_03               1X03                   Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections 
+V_BATT                      PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+XTAL1                       PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+XTAL2                       PINHD-1X1             1X01                   PIN HEADER                                                                                                      
+Y2            8MHz          CRYSTAL-8MHZSMD-5X3.2 CRYSTAL-SMD-5X3.2-4PAD 8MHz Crystal                                                                                                    

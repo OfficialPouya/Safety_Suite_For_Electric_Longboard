@@ -1,0 +1,3 @@
+Sources for Electric longboard remote (Heltec)
+
+Electric longboard remote (deprecated, please use Heltec version) (http://www.thingiverse.com/thing:3185093)
