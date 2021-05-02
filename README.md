@@ -4,9 +4,11 @@ This is my Senior Design (ECE 445) Project
 
 Contributors
 -----
-Pouya Akbarzadeh (myself)
-Alexander Krysl
-Patrick Stach 
+[Pouya Akbarzadeh](https://github.com/OfficialPouya)
+
+[Alexander Krysl]
+
+[Patrick Stach](https://github.com/pat-stach) 
 
 Demo
 -----
