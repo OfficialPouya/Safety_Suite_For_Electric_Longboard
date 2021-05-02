@@ -19,5 +19,6 @@ Presentation
 
 Final Results
 -----
-[Board&Remote](https://i.imgur.com/wKfyaSs.jpg)
-[OurTeam](https://i.imgur.com/wKfyaSs.jpg)
+![Board&Remote](https://i.imgur.com/wKfyaSs.jpg)
+
+![OurTeam](https://i.imgur.com/wKfyaSs.jpg)
