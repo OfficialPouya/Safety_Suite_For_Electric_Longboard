@@ -13,9 +13,11 @@ Contributors
 
 Demo
 -----
+![Demo Videos](https://youtube.com/playlist?list=PLA1k06jt2lX96S8fyMhxUn8I97ABxR8k6)
 
 Presentation
 -----
+COMING SOON!
 
 Final Results
 -----
