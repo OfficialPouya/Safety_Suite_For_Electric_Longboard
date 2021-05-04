@@ -7,7 +7,7 @@ Contributors
 -----
 [Pouya Akbarzadeh](https://github.com/OfficialPouya)
 
-[Alexander Krysl]
+[Alexander Krysl](https://www.linkedin.com/in/alexander-krysl-890783170/)
 
 [Patrick Stach](https://github.com/pat-stach) 
 
