@@ -3,6 +3,11 @@ This is my Senior Design (ECE 445) Project
 
 The goal of the project is to increase Safety for electric longboard users. To find out more about the project, feel free to watch the presentation, demos, and the rest of this repository. This project would not have been possible without the help of Alex and Patrick. 
 
+Best Overall Project Winner (Spring 2021)
+-----
+Best project out of 72 teams/projects
+$1500 Award
+
 Contributors
 -----
 [Pouya Akbarzadeh](https://github.com/OfficialPouya)
@@ -17,7 +22,7 @@ Demo
 
 Presentation
 -----
-COMING SOON!
+https://youtu.be/vuW8QV6lmwM
 
 Final Results
 -----
