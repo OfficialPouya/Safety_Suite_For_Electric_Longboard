@@ -6,6 +6,7 @@ The goal of the project is to increase Safety for electric longboard users. To f
 Best Overall Project Winner (Spring 2021)
 -----
 Best project out of 72 teams/projects
+
 $1500 Award
 
 Contributors
